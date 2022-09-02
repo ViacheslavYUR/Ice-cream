@@ -1,0 +1,12 @@
+.products-info {
+  @include font-style(800, 30px, 37px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.products-title {
+  @include font-style(400, 36px, 45px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.products-list__title {
+}
