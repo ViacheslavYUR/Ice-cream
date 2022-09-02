@@ -1,11 +1,13 @@
 .outline-button__products {
     @extend %button;
-    padding: 12px 36px;
-    border: 2px solid var(--accent-color);    
-    @include font-style (600, 14px, 18px);
+    @include centered-flex();
+    height: 42px;
+    width: 134px;
+    border: 2px solid var(--accent-color);        
     background-color: transparent;
 
     &:hover, &:focus {
+        @include font-style (700, 15px, 18px);
         border: 2px solid var(--button-hover-color);
     }
 
@@ -14,24 +16,33 @@
     }
 
     @media screen and (max-width: 768px) {
-        padding: 15px;
-        @include font-style (400, 8px, 9px);        
+        height: 24px;
+        width: 62px;
+        border-radius: 8px;
+        @include font-style (600, 8px, 10px);
+
+        &:hover, &:focus {
+            @include font-style (700, 9px, 11px);
+            border: 2px solid var(--button-hover-color);
+        }
     }
 }
 
 .outline-button__franchise {
     @extend %button;
-    padding: 12px 36px;
+    @include centered-flex();
+    height: 42px;
+    width: 196px;
     border: 2px solid var(--accent-color);
-    @include font-style (600, 14px, 18px);
     color: #FCFCFC;
     background-color: transparent;
     
-    &:hover {
+    &:hover, &:focus {
+        @include font-style (700, 15px, 18px);
         border: 2px solid var(--button-hover-color);
     }
 
     &:disabled {
         border: 2px solid var(--button-dasibled-color);
-    }
+    }    
 }

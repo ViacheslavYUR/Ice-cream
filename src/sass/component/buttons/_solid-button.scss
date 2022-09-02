@@ -1,15 +1,61 @@
-.solid-button {
+.solid-button__buy-now {
     @extend %button;
-    padding: 12px 33px;
-    @include font-style (600, 14px, 18px);
+    @include centered-flex();
+    height: 42px;
+    width: 152px;
+    color: #000000;
     background-color: var(--accent-color);
     
     &:hover,
     &:focus {
+        @include font-style (700, 15px, 18px);
         background-color: var(--button-hover-color);
     }
     
     &:disabled {
         background-color: var(--button-dasibled-color);
-    }    
+    }
+}
+
+.solid-button__read-more {
+    @extend %button;
+    @include centered-flex();
+    height: 42px;
+    width: 164px;
+    color: #000000;
+    background-color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+        @include font-style (700, 15px, 18px);
+        background-color: var(--button-hover-color);
+    }
+
+    &:disabled {
+        background-color: var(--button-dasibled-color);
+    }
+}
+
+.solid-button__our-location {
+    @extend %button;
+    @include centered-flex();
+    height: 42px;
+    width: 196px;
+    color: #000000;
+    background-color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+        @include font-style (700, 15px, 18px);
+        background-color: var(--button-hover-color);
+    }
+
+    &:disabled {
+        background-color: var(--button-dasibled-color);
+    }
+}
+
+.solid-button__icon {
+    margin-left: 12px;
+    fill: currentColor;
 }
