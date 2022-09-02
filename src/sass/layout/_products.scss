@@ -8,3 +8,6 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.products-list__title {
+  @include font-style(400, 36px, 45px);
+}
