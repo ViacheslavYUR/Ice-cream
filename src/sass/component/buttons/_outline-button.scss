@@ -25,6 +25,7 @@
     border: 2px solid var(--accent-color);
     @include font-style (600, 14px, 18px);
     color: #FCFCFC;
+    background-color: transparent;
     
     &:hover {
         border: 2px solid var(--button-hover-color);

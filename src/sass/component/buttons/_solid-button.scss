@@ -1,4 +1,15 @@
 .solid-button {
     @extend %button;
-
+    padding: 12px 33px;
+    @include font-style (600, 14px, 18px);
+    background-color: var(--accent-color);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--button-hover-color);
+    }
+    
+    &:disabled {
+        background-color: var(--button-dasibled-color);
+    }    
 }
