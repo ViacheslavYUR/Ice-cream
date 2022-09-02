@@ -1,8 +1,8 @@
 <header class="page-header section">
   <div class="container">
     <a href="#" class="logo">
-      <svg class="logo_icon">
-        <use href="../SVG/ic-sprite.svg#icon-Logo"></use>
+      <svg class="logo__icon">
+        <use href="./images/svg/ic-sprite.svg#logo"></use>
       </svg>
     </a>
     <nav class="menu">
@@ -22,19 +22,29 @@
         </li>
       </ul>
     </nav>
-    <button type button class="mobile-menu-btn" aria-label="mobile-menu button opening" data-menu-open>
-      <svg class="mobile-menu-btn__icon-burger" width="40" height="40">
-        <use href="../SVG/ic-sprite.svg#icon-Burger"></use>
-      </svg>
-      <svg class="mobile-menu-close__icon-close" width="40" height="40">
-        <use href="../SVG/ic-sprite.svg#icon-close"></use>
+    <button
+      type
+      button
+      class="mobile-menu-btn is-open"
+      aria-label=" switch mobile-menu "
+      data-menu-button
+    >
+      <svg class="mobile-menu-btn__icon" width="32" height="32">
+        <use
+          class="mobile-menu-btn__icon mobile-menu-btn__icon--open"
+          href="./images/svg/ic-sprite.svg#burger"
+        ></use>
+        <use
+          class="mobile-menu-btn__icon mobile-menu-btn__icon--close"
+          href="./images/svg/ic-sprite.svg#close"
+        ></use>
       </svg>
     </button>
 
     <button type="button" class="header-btn">
       Buy now
       <svg class="header-btn__icon" width="4" height="8">
-        <use href="../SVG/ic-sprite.svg#icon-Vector"></use>
+        <use href="./images/svg/ic-sprite.svg#vector"></use>
       </svg>
     </button>
   </div>
