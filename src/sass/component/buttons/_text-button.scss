@@ -1,0 +1,24 @@
+.text-button {
+    @extend %button;
+    color: var(--accent-color);
+    background-color: transparent;
+    text-decoration: underline;
+    border-radius: 0px;
+
+    &:hover, &:focus {
+        @include font-style (700, 15px, 18px);
+        color: var(--button-hover-color);
+    }
+
+    &:disabled {
+        color: var(--button-dasibled-color);
+    }
+
+    @media screen and (max-width: 768px) {
+        @include font-style (600, 8px, 10px);
+
+        &:hover, &focus {
+            @include font-style (700, 9px, 11px);
+        }
+    }
+}

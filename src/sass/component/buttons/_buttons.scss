@@ -2,8 +2,10 @@
     cursor: pointer;
     font-family: inherit;
     border: 0px;
-    border-radius: 10px;    
+    @include font-style (600, 14px, 18px);
+    border-radius: 10px;
 }
 
 @import './outline-button';
 @import './solid-button';
+@import './text-button';
