@@ -18,10 +18,15 @@
 }
 
 .footer__title-text {
-   
-  /*   font-weight: 700;
-    font-size: 34px;
-    line-height: 1.2; */
+   @include font-style (700, 34px, 41px);
     text-transform: uppercase;
    /*  color: var(--secondary-text-color); */
 }
+
+.footer__list-social {
+    display: flex;
+    justify-content: right;
+    gap: 28px;
+    margin-bottom: 38px;
+}
+
