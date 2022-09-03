@@ -11,3 +11,9 @@
     padding-bottom: 42px;
 }
 
+.footer__text {
+    @include font-style (700, 18px, 22px);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
