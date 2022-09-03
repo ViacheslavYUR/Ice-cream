@@ -59,7 +59,7 @@
 .customer__desc-review {
     @include font-style (400, 12px, 31px);
     
-    color: #fcfcfc;
+    color: var(--secondary-text-color);
     background-color: var(--main-bg-color);
     padding: 34px 39px;
     border-radius: 10px;
