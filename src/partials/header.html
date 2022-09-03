@@ -1,11 +1,13 @@
 <header class="page-header">
-  <div class="container page-header__container ">
+  <div class="container page-header__container">
     <a href="#" class="logo">
-     <img class="logo__img" src="./images/png/logo.png" alt="Logotype">
+      <img class="logo__img" src="./images/png/logo.png" alt="Logotype" />
     </a>
     <nav class="nav-menu">
       <ul class="menu">
-        <li class="menu__item"><a href="#Home" class="menu__link">Home</a></li>
+        <li class="menu__item">
+          <a href="#Home" class="menu__link">Home</a>
+        </li>
         <li class="menu__item">
           <a href="#About_us" class="menu__link">About us</a>
         </li>
@@ -20,25 +22,52 @@
         </li>
       </ul>
     </nav>
-    <button
-      type="button"
-      class="mobile-menu-btn is-open"
-      aria-label=" switch mobile-menu "
-      data-menu-button>
-      <svg class="mobile-menu-btn__icon" width="32" height="32">
-        <use
-          class="mobile-menu-btn__icon mobile-menu-btn__icon--open"
-          href="./images/svg/ic-sprite.svg#burger"
-        ></use>
-        <use
-          class="mobile-menu-btn__icon mobile-menu-btn__icon--close"
-          href="./images/svg/ic-sprite.svg#close"
-        ></use>
+    <div class="menu-container" data-menu>
+      <a href="#" class="logo menu-container__logo">
+        <img class="logo__img" src="./images/png/logo.png" alt="Logotype" />
+      </a>
+      <nav class="nav-menu-mobile">
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="#Home" class="mobile-menu__link">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#About_us" class="mobile-menu__link">About us</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#How_it’s_made?" class="mobile-menu__link">How it’s made?</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#Our_products" class="mobile-menu__link">Our products</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#Contact" class="mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header-solid-button">
+        Buy now
+        <svg class="header-solid-button__icon" width="4" height="8">
+          <use href="./images/svg/ic-sprite.svg#vector"></use>
+        </svg>
+      </button>
+
+      <button type="button" class="mobile-menu-close" aria-label=" switch mobile-menu " data-menu-close>
+        <svg class="mobile-menu-close__icon" width="32" height="32">
+          <use href="./images/svg/ic-sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <button type="button" class="mobile-menu-open" aria-label=" switch mobile-menu " data-menu-open>
+      <svg class="mobile-menu-open__icon" width="32" height="32">
+        <use href="./images/svg/ic-sprite.svg#burger"></use>
       </svg>
     </button>
-    <button type="button" class="header-btn">
+
+    <button type="button" class="header-solid-button header-solid-button--main">
       Buy now
-      <svg class="header-btn__icon" width="4" height="8">
+      <svg class="header-solid-button__icon" width="4" height="8">
         <use href="./images/svg/ic-sprite.svg#vector"></use>
       </svg>
     </button>
