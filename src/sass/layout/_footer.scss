@@ -1,0 +1,27 @@
+.footer {
+    background-color: var(--main-bg-color);
+}
+
+.footer-wrapper {
+    margin-bottom: 40px;
+  }
+  
+.footer__thumb-left {
+    width: 234px;
+    padding-bottom: 42px;
+}
+
+.footer__text {
+    @include font-style (700, 18px, 22px);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.footer__title-text {
+   
+  /*   font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2; */
+    text-transform: uppercase;
+   /*  color: var(--secondary-text-color); */
+}
