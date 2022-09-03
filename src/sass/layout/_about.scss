@@ -1,0 +1,45 @@
+.about__label{
+@include font-style(800, 30px, 37px);
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FCFCFC;
+}
+.about__title{
+font-family: var(--primary-font);
+@include font-style(400, 36px, 45px);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+}
+
+.about__list{
+    padding-top: 172px;
+    padding-left: 100px;
+}
+.about__text-ice{
+    width: 463px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: #FCFCFC;
+}
+.about__text{
+    width: 463px;
+    padding-top: 8px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    color: #FCFCFC;
+}
+.about__wrapper{
+    display: flex;
+}
+.about-img{
+    padding-top: 82px;
+}
