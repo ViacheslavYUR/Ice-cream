@@ -1,4 +1,26 @@
 .page-header {
-    background-color: var(--main-bg-color);
+  position: absolute;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
+
+
+
+.mobile-menu-btn {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu-btn__icon--close {
+    display: none;
+}
+
+.mobile-menu-btn.is-open .mobile-menu-btn__icon--close  {
+display: block;
+}
+
+.mobile-menu-btn.is-open .mobile-menu-btn__icon--open {
+    display: none;
+}

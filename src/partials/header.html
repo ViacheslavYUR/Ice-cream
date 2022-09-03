@@ -1,21 +1,19 @@
-<header class="page-header section">
-  <div class="container">
+<header class="page-header">
+  <div class="container page-header__container ">
     <a href="#" class="logo">
-      <svg class="logo_icon">
-        <use href="./images/svg/ic-sprite.svg#logo"></use>
-      </svg>
+     <img class="logo__img" src="./images/png/logo.png" alt="Logotype">
     </a>
-    <nav class="menu">
-      <ul class="menu-list">
+    <nav class="nav-menu">
+      <ul class="menu">
         <li class="menu__item"><a href="#Home" class="menu__link">Home</a></li>
         <li class="menu__item">
-          <a href="#About us" class="menu__link">About us</a>
+          <a href="#About_us" class="menu__link">About us</a>
         </li>
         <li class="menu__item">
-          <a href="#How it’s made?" class="menu__link">How it’s made?</a>
+          <a href="#How_it’s_made?" class="menu__link">How it’s made?</a>
         </li>
         <li class="menu__item">
-          <a href="#Our products" class="menu__link">Our products</a>
+          <a href="#Our_products" class="menu__link">Our products</a>
         </li>
         <li class="menu__item">
           <a href="#Contact" class="menu__link">Contact</a>
@@ -23,20 +21,21 @@
       </ul>
     </nav>
     <button
-      type
-      button
-      class="mobile-menu-btn"
-      aria-label="mobile-menu button opening"
-      data-menu-open
-    >
-      <svg class="mobile-menu-btn__icon-burger" width="40" height="40">
-        <use href="./images/svg/ic-sprite.svg#burger"></use>
-      </svg>
-      <svg class="mobile-menu-close__icon-close" width="40" height="40">
-        <use href="./images/svg/ic-sprite.svg#close"></use>
+      type="button"
+      class="mobile-menu-btn is-open"
+      aria-label=" switch mobile-menu "
+      data-menu-button>
+      <svg class="mobile-menu-btn__icon" width="32" height="32">
+        <use
+          class="mobile-menu-btn__icon mobile-menu-btn__icon--open"
+          href="./images/svg/ic-sprite.svg#burger"
+        ></use>
+        <use
+          class="mobile-menu-btn__icon mobile-menu-btn__icon--close"
+          href="./images/svg/ic-sprite.svg#close"
+        ></use>
       </svg>
     </button>
-
     <button type="button" class="header-btn">
       Buy now
       <svg class="header-btn__icon" width="4" height="8">
