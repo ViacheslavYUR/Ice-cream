@@ -6,6 +6,9 @@
 <symbol id="arrow-hover" viewBox="0 0 102 32">
 <path d="M88.686 1.858l12.728 12.728c0.781 0.781 0.781 2.047 0 2.828l-12.728 12.728c-0.781 0.781-2.047 0.781-2.828 0s-0.781-2.047 0-2.828l9.314-9.314h-95.172v-4h95.172l-9.314-9.314c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0z"></path>
 </symbol>
+<symbol id="arrow-focus" viewBox="0 0 69 32">
+<path d="M55.353 1.858l12.728 12.728c0.781 0.781 0.781 2.047 0 2.828l-12.728 12.728c-0.781 0.781-2.047 0.781-2.828 0s-0.781-2.047 0-2.828l9.314-9.314h-61.838v-4h61.838l-9.314-9.314c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0z"></path>
+</symbol>
 <symbol id="burger" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6 10h20"></path>
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6 16h20"></path>

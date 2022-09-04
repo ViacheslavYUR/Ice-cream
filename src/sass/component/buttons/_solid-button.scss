@@ -5,10 +5,15 @@
   width: 152px;
   color: #000000;
   background-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 
-  &:hover,
+  &:hover {
+    background-color: var(--button-hover-color);
+  }
+
   &:focus {
-    @include font-style(700, 15px, 18px);
+    color: var(--secondary-text-color);
     background-color: var(--button-hover-color);
   }
 
@@ -35,10 +40,15 @@
   width: 164px;
   color: #000000;
   background-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 
-  &:hover,
+  &:hover {
+      background-color: var(--button-hover-color);
+    }
+  
   &:focus {
-    @include font-style(700, 15px, 18px);
+    color: var(--secondary-text-color);
     background-color: var(--button-hover-color);
   }
 
@@ -54,10 +64,15 @@
   width: 196px;
   color: #000000;
   background-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 
-  &:hover,
+  &:hover {
+    background-color: var(--button-hover-color);
+  }
+  
   &:focus {
-    @include font-style(700, 15px, 18px);
+    color: var(--secondary-text-color);
     background-color: var(--button-hover-color);
   }
 
