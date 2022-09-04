@@ -1,3 +1,7 @@
+.advantages {
+    padding-bottom: 36px;
+}
+
 .advantages-list {
   display: flex;
   flex-direction: column;
@@ -15,7 +19,7 @@
   @include font-style(700, 36px, 42px);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: (var(--secondary-text-color));
 }
 
 .advantages-list__text {
@@ -68,7 +72,7 @@
 
 @media screen and (min-width: 768px) {
   .advantages {
-    padding-bottom: 204px;
+    padding-bottom: 40px;
   }
 
   .advantages-list {
@@ -102,7 +106,7 @@
 
 @media screen and (min-width: 1200px) {
   .advantages {
-    padding-bottom: 180px;
+    padding-bottom: 86px;
   }
 
   .advantages-list__item {
