@@ -6,10 +6,16 @@
     color: var(--main-text-color);    
     background-color: transparent;
     border: 2px solid var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
 
-    &:hover, &:focus {
-        @include font-style (700, 15px, 18px);
+    &:hover {
         border: 2px solid var(--button-hover-color);
+    }
+
+    &:focus {
+        border: 2px solid var(--button-hover-color);
+        color: var(--secondary-text-color);
     }
 
     &:disabled {
@@ -22,9 +28,13 @@
         border-radius: 8px;
         @include font-style (600, 8px, 10px);
 
-        &:hover, &:focus {
-            @include font-style (700, 9px, 11px);
+        &:hover {
             border: 2px solid var(--button-hover-color);
+        }
+
+        &:focus {
+            border: 2px solid var(--button-hover-color);
+            color: var(--secondary-text-color);
         }
     }
 }
@@ -37,10 +47,16 @@
     border: 2px solid var(--accent-color);
     color: var(--main-text-color);
     background-color: transparent;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
     
-    &:hover, &:focus {
-        @include font-style (700, 15px, 18px);
+    &:hover {
         border: 2px solid var(--button-hover-color);
+    }
+    
+    &:focus {
+        border: 2px solid var(--button-hover-color);
+        color: var(--secondary-text-color);
     }
 
     &:disabled {

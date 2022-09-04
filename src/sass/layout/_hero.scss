@@ -141,9 +141,32 @@
     }
 }
 
-.hero__product-text-icon {
+.hero__link {
+    display: block;
+    width: 41px;
+    height: 15px;
+    color: currentColor;
+    position: relative;
+    overflow: hidden;
+    transform-origin: left;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover {
+        transform: scale(125%);
+    }
+
+    &:focus {
+        transform: scale(150%);
+    }
+}
+
+.hero__arrow {
     fill: currentColor;
+    position: absolute;
     animation-name: product-img;
+    display: block;    
     animation-duration: 500ms;
     animation-delay: 100ms;
     animation-timing-function: var(--timing-function);

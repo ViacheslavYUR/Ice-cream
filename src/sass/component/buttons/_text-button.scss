@@ -9,10 +9,15 @@
     background-color: transparent;
     text-decoration: underline;
     border-radius: 0px;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
 
-    &:hover, &:focus {
-        @include font-style (700, 15px, 18px);
+    &:hover {
         color: var(--button-hover-color);
+    }
+    
+    &:focus {
+        color: var(--secondary-text-color);
     }
 
     &:disabled {
@@ -25,9 +30,13 @@
         padding-bottom: 9px;
         padding-left: 10px;
         padding-right: 10px;
-
-        &:hover, &focus {
-            @include font-style (700, 9px, 11px);
+        
+        &:hover {
+            color: var(--button-hover-color);
         }
+            
+        &:focus {
+            color: var(--secondary-text-color);
+        }        
     }
 }
