@@ -28,14 +28,23 @@
 
 .mobile-menu-open {
   z-index: 100;
+  line-height: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu-open {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+  }
 }
 
 .mobile-menu-open__icon {
-   fill:#fff;
+  fill: #fff;
 }
 
 .mobile-menu-close__icon {
-    fill: #fff;
+  fill: #fff;
 }
 
 .menu-container {
@@ -76,10 +85,14 @@
   border: none;
   padding: 0;
   line-height: 0;
-  
 }
 
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mobile-menu-close {
+    top: 32px;
+    right: 32px;
+  }
+}
 
 .page-header__container {
   display: flex;
