@@ -3,11 +3,31 @@
   background-repeat: repeat-y;
   background-position: top left;
   background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url('../images/mobile/ice-cream-background-mobile/ice-cream-background-mobile@2x.jpg');
+  }
+
   @media screen and(min-width:768px) {
     background-image: url(../images/tablet/ice-cream-background-tablet/ice-cream-background-tablet.jpg);
   }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url('../images/tablet/ice-cream-background-tablet/ice-cream-background-tablet@2x.jpg');
+  }
+
   @media screen and(min-width:1200px) {
     background-image: url(../images/desktop/ice-cream-background/ice-cream-background.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url('../images/desktop/ice-cream-background/ice-cream-background@2x.jpg');
   }
 }
 .products__info {
@@ -85,6 +105,33 @@
   background-size: 200px, cover;
   background-repeat: no-repeat, repeat-y;
 
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(../images/mobile/product-1-mobile/product-1-mobile@2x.png),
+      linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/product-1-tablet/product-1-tablet.png),
+      linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/tablet/product-1-tablet/product-1-tablet@2x.png),
+      linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/product-1/product-1.png),
+      linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(../images/desktop/product-1/product-1@2x.png),
+      linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+  }
+
   @media screen and (min-width: 1200px) {
     background-size: 300px, cover;
   }
@@ -96,6 +143,33 @@
   background-size: 200px, cover;
   background-repeat: no-repeat, repeat-y;
 
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(../images/mobile/product-2-mobile/product-2-mobile@2x.png),
+      linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/product-2-tablet/product-2-tablet.png),
+      linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/tablet/product-2-tablet/product-2-tablet@2x.png),
+      linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/product-2/product-2.png),
+      linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(../images/desktop/product-2/product-2@2x.png),
+      linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+  }
+
   @media screen and (min-width: 1200px) {
     background-size: 300px, cover;
   }
@@ -106,6 +180,33 @@
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   background-size: 200px, cover;
   background-repeat: no-repeat, repeat-y;
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(../images/mobile/product-3-mobile/product-3-mobile@2x.png),
+      linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/product-3-tablet/product-3-tablet.png),
+      linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/tablet/product-3-tablet/product-3-tablet@2x.png),
+      linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/product-3/product-3.png),
+      linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(../images/desktop/product-3/product-3@2x.png),
+      linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+  }
 
   @media screen and (min-width: 1200px) {
     background-size: 300px, cover;
@@ -164,6 +265,11 @@
 .products-list__icon {
   width: 60px;
   height: 40px;
+  .products-list__information:hover &,
+  .products-list__information:focus & {
+    transform-origin: center left;
+    transform: scaleX(1.25);
+  }
 }
 
 @media screen and(min-width:768px) {
