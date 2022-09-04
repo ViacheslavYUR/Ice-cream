@@ -152,6 +152,9 @@
   .menu__link {
     @include font-style(700, 16px, 20px);
     color: var(--secondary-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
     &:hover,
     &:focus {
       color: var(--accent-color);
@@ -177,6 +180,8 @@
   .mobile-menu__link {
     @include font-style(700, 32px, 39px);
     color: var(--secondary-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
   }
   .menu-container__logo {
     margin-bottom: 51px;
@@ -191,6 +196,8 @@
   .mobile-menu__link {
     @include font-style(700, 48px, 59px);
     color: var(--secondary-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
   }
 
   .menu-container__logo {

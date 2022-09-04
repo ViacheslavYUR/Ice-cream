@@ -265,9 +265,12 @@
 .products-list__icon {
   width: 60px;
   height: 40px;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
   .products-list__information:hover &,
   .products-list__information:focus & {
-    transform-origin: center left;
+    transform-origin: left;
     transform: scaleX(1.25);
   }
 }
