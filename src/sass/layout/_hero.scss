@@ -48,7 +48,7 @@
 
 @keyframes hero-title {
     from {
-        transform: translateX(-300%);
+        transform: translateX(-100vw);
     }
 }
 
@@ -110,7 +110,7 @@
 
 @keyframes product-img {
     from {
-            transform: translateY(300%);
+            transform: translateY(100vw);
         }
 }
 
@@ -145,7 +145,7 @@
     fill: currentColor;
     animation-name: product-img;
     animation-duration: 500ms;
-    animation-delay: 50ms;
+    animation-delay: 100ms;
     animation-timing-function: var(--timing-function);
 }
 
@@ -183,11 +183,15 @@
     animation-name: hero__number;
     animation-duration: 500ms;
     animation-timing-function: var(--timing-function);
+    
+    @media screen and (min-width: 1200px) {
+        @include font-style(900, 46px, 56px);
+    }
 }
 
 @keyframes hero__number {
     from {
-        transform: translateX(300%);
+        transform: translateX(100vw);
     }
 }
 
@@ -196,37 +200,49 @@
     text-align: right;
     animation-name: hero__place;
     animation-duration: 500ms;
-    animation-delay: 150ms;
+    animation-delay: 100ms;
     animation-timing-function: var(--timing-function);
+
+    @media screen and (min-width: 1200px) {
+        @include font-style(400, 14px, 17px);
+    }
 }
 
 @keyframes hero__place {
     from {
-        transform: translateX(300%);
+        transform: translateX(100vw);
     }
 }
 
 .hero__icecream-hero {
     position: absolute;
     bottom: 0;
-    left: 83px;
     animation-name: icecream-hero;
     animation-duration: 500ms;
     animation-timing-function: var(--timing-function);
+
+    @media screen and (max-width: 479px) {
+            left: 50vw;
+            transform: translateX(-47%);
+        }
+
+    @media screen and (min-width: 480px) {
+        left: 117px;
+    }
 
     @media screen and (min-width: 768px) {
         left: 365px;
     }
 
     @media screen and (min-width: 1200px) {
-        left: 400px;
+        left: 556px;
     }    
 }
 
 @keyframes icecream-hero {
     from {
         transform: translateX(-150%) translateY(150%);
-        rotate: -100deg;
+        rotate: -180deg;
         scale: 0%;
     }
 }
