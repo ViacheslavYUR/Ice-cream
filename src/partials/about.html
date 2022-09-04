@@ -3,41 +3,20 @@
     <p class="about__label">tradition and love</p>
     <h2 class="about__title">how it<span>&#39;</span>s made?</h2>
     <div class="about__position">
-      <div class="about__wrapper">
-        <picture>
-          <source
-            srcset="
-              ./images/desktop/cow/cow.png    1x,
-              ./images/desktop/cow/cow@2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-
-          <source
-            srcset="
-              ./images/tablet/cow-tablet/cow-tablet.png    1x,
-              ./images/tablet/cow-tablet/cow-tablet@2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-
-          <source
-            srcset="
-              ./images/mobile/cow-mobile/cow-mobile.png    1x,
-              ./images/mobile/cow-mobile/cow-mobile@2x.png 2x
-            "
-            media="(max-width: 767px)"
-          />
-
-          <img
-            class="about-img"
-            src="./images/mobile/cow-mobile/cow-mobile.png"
-            alt="cow in the grassland"
-          />
-        </picture>
-      </div>
-      <div class="about__text-position">
-        <ul class="about__list">
+          <picture class="about__img-wrapper">
+            <source srcset="./images/desktop/cow/cow.png 1x,
+                              ./images/desktop/cow/cow@2x.png 2x" media="(min-width: 1200px)" />
+          
+            <source srcset="./images/tablet/cow-tablet/cow-tablet.png 1x,
+                              ./images/tablet/cow-tablet/cow-tablet@2x.png 2x" media="(min-width: 768px)" />
+          
+            <source srcset="./images/mobile/cow-mobile/cow-mobile.png 1x,
+                              ./images/mobile/cow-mobile/cow-mobile@2x.png 2x" media="(max-width: 767px)" />
+          
+            <img class="about-img" src='./images/mobile/cow-mobile/cow-mobile.png' alt="cow in the grassland" />
+          </picture>
+        <div class="about__text-position">
+          <ul class="about__list">
           <li class="about__item">
             <p class="about__text-ice">
               Ice is a place where you will become not only a little happier,
