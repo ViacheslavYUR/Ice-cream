@@ -56,31 +56,10 @@
 }
 
 .solid-button__icon {
-  margin-left: 12px;
+  margin-left: 10px;
   fill: currentColor;
 }
 
-.header-solid-button {
-  @extend %button;
-  @include centered-flex();
-  gap: 16px;
-  padding: 20px 34px;
-  color: #000000;
-  background-color: var(--accent-color);
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 100;
 
-  &:hover,
-  &:focus {
-    @include font-style(700, 15px, 18px);
-    background-color: var(--button-hover-color);
-  }
-
-  &:disabled {
-    background-color: var(--button-dasibled-color);
-  }
-    .header-solid-button__icon {
-      fill:currentColor;
-    }
-}
+// код для вставки svg class="solid-button__icon"
+// <svg class="solid-button__icon"width="7" height="10"><use href="./images/svg/ic-sprite.svg#vector"></use></svg>
