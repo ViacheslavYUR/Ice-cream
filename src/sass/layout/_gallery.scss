@@ -10,11 +10,19 @@
 
 .gallery__container {
   @include centered-flex($type: center);
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: relative;
+  }
 }
 
 .gallery__thumb {
   overflow: hidden;
   border-radius: 7px;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    transform: translate(94px, -94px);
+  }
 }
 
 @media screen and(min-width:768px) {
