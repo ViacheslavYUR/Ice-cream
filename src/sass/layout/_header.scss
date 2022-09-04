@@ -197,3 +197,10 @@
     margin-bottom: 75px;
   }
 }
+
+@media screen and (max-width:1199px) {
+  .mobile-menu__link:hover,
+  .mobile-menu__link:focus {
+    color:var(--main-text-color);
+  }
+}
