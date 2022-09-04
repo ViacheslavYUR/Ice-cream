@@ -7,12 +7,10 @@
 
     @media screen and (min-width: 768px) {
             @include font-style(800, 22px, 27px);
-    
         }
     
         @media screen and (min-width: 1200px) {
             @include font-style(800, 30px, 37px);
-    
         }
 }
 .about__title{
@@ -26,17 +24,11 @@
 
     @media screen and (min-width: 768px) {
             @include font-style(400, 34px, 43px);
-           
         }
     
         @media screen and (min-width: 1200px) {
             @include font-style(400, 36px, 45px);
-           
         }
-}
-.about__list{
-    padding-top: 40px;
-    padding-left: 0px;
 }
 .about__text-ice{
     @include font-style(400, 12px, 21px);
@@ -53,29 +45,57 @@
 }
 .about__text-mobile{
     @include font-style(400, 12px, 19px);
-        padding-top: 8px;
-        font-family: var(--secondary-font);
-        letter-spacing: 0.04em;
-        color: var(--secondary-text-color);
-       
+    padding-top: 8px;
+    font-family: var(--secondary-font);
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
 }
 
- @media screen and (max-width: 767px) {
-    .about__btn {
-        margin-top: 20px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+@media screen and (max-width: 767px) {
+    .about-img {
+            padding-top: 22px;
+        }
+    .about__wrapper {
+    padding-top: 32px;
+        }
+    .about__list {
+    padding-top: 40px;
+        }
+    .about__text-position {
+    padding-left: 50px;
+    padding-right: 50px;
+        }
+    .about-bt {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
         }
     .about__text-mobile {
      display: none;}
- }
+}
 
 @media screen and (min-width: 768px) {
+    .about-img {
+        padding-top: 26px;
+        }
+    .about__wrapper {
+        padding-top: 40px;
+        }
+    .about__list {
+        padding-top: 79px;
+        }
+    .about__position{
+        display: flex;
+        }
+    .about__text-position{
+        padding-left: 32px;
+        padding-right: 34px;
+        }
     .about__text {
         padding-top: 8px;
         }
-    .about__btn {
+    .about-bt {
         margin-top: 48px;
         }
     .about__text-mobile {
@@ -84,47 +104,32 @@
 }
 
  @media screen and (min-width: 1200px) {
+    .about-img {
+        padding-top: 39px;}
+    .about__wrapper {
+        padding-top: 82px;
+        }
+    .about__list {
+        padding-top: 172px;
+        }
+    .about__text-position {
+        padding-left: 100px;
+        padding-right: 121px
+        }
     .about__text-ice{
     @include font-style(400, 16px, 28px);
-    }
+        }
     .about__text{
         padding-top: 8px;
     @include font-style(400, 14px, 28px);
-    }
+        }
     .about__text-mobile{
     @include font-style(400, 14px, 28px);
-    }
- }
-
-.about__wrapper{
-    padding-top: 32px;
+        }
 }
 
 .about-img{
-    padding-top: 22px;
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
     border-radius: 250px;
-
 }
-
-.about__btn {
-    @extend %button;
-    @include centered-flex();
-    height: 42px;
-    width: 164px;
-    color: #000000;
-    background-color: var(--accent-color);
-
-    &:hover,
-    &:focus {
-        @include font-style (700, 15px, 18px);
-        background-color: var(--button-hover-color);
-    }
-
-    &:disabled {
-        background-color: var(--button-dasibled-color);
-    }
-}
-
- 
