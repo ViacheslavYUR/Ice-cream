@@ -2,43 +2,55 @@
   <div class="container container--relative">
     <picture>
       <source
-        srcset="./images/desktop/ice-cream/ice-cream-desktop.png 1x"
-        srcset="./images/desktop/ice-cream/ice-cream-desktop@2x.png 2x"
+        srcset="
+          ./images/desktop/ice-cream/ice-cream-desktop.png    1x,
+          ./images/desktop/ice-cream/ice-cream-desktop@2x.png 2x
+        "
         media="(min-width: 1200px)"
         type="image/png"
       />
 
       <source
-        srcset="./images/desktop/ice-cream/ice-cream-desktop.webp 1x"
-        srcset="./images/desktop/ice-cream/ice-cream-desktop@2x.webp 2x"
+        srcset="
+          ./images/desktop/ice-cream/ice-cream-desktop.webp    1x,
+          ./images/desktop/ice-cream/ice-cream-desktop@2x.webp 2x
+        "
         media="(min-width: 1200px)"
         type="image/webp"
       />
 
       <source
-        srcset="./images/tablet/ice-cream-tablet/ice-cream-tablet.png 1x"
-        srcset="./images/tablet/ice-cream-tablet/ice-cream-tablet@2x.png 2x"
+        srcset="
+          ./images/tablet/ice-cream-tablet/ice-cream-tablet.png    1x,
+          ./images/tablet/ice-cream-tablet/ice-cream-tablet@2x.png 2x
+        "
         media="(min-width: 768px)"
         type="image/png"
       />
 
       <source
-        srcset="./images/tablet/ice-cream-tablet/ice-cream-tablet.webp 1x"
-        srcset="./images/tablet/ice-cream-tablet/ice-cream-tablet@2x.webp 2x"
+        srcset="
+          ./images/tablet/ice-cream-tablet/ice-cream-tablet.webp    1x,
+          ./images/tablet/ice-cream-tablet/ice-cream-tablet@2x.webp 2x
+        "
         media="(min-width: 768px)"
         type="image/webp"
       />
 
       <source
-        srcset="./images/mobile/ice-cream-mobile/ice-cream-mobile.png 1x"
-        srcset="./images/mobile/ice-cream-mobile/ice-cream-mobile@2x.png 2x"
+        srcset="
+          ./images/mobile/ice-cream-mobile/ice-cream-mobile.png    1x,
+          ./images/mobile/ice-cream-mobile/ice-cream-mobile@2x.png 2x
+        "
         media="(max-width: 767px)"
         type="image/png"
       />
 
       <source
-        srcset="./images/mobile/ice-cream-mobile/ice-cream-mobile.webp 1x"
-        srcset="./images/mobile/ice-cream-mobile/ice-cream-mobile@2x.webp 2x"
+        srcset="
+          ./images/mobile/ice-cream-mobile/ice-cream-mobile.webp    1x,
+          ./images/mobile/ice-cream-mobile/ice-cream-mobile@2x.webp 2x
+        "
         media="(max-width: 767px)"
         type="image/webp"
       />
@@ -48,104 +60,100 @@
         src="./images/mobile/ice-cream-mobile/ice-cream-mobile.png"
         alt="Рожек мороженного с желтым, зеленым и розовым шариком со смаликами"
       />
-
-      <h1 class="hero__title">
-        ice cream made with <span class="hero__title-accent">passion</span>
-      </h1>
-
-      <div class="hero__buttons-thumb">
-        <button class="outline-button__products">Products</button>
-        <button class="text-button">How it’s made?</button>
-      </div>
-
-      <div class="hero__product-thumb">
-        <picture>
-          <source
-            srcset="./images/desktop/many-icecreams/many-icecreams.png 1x"
-            srcset="./images/desktop/many-icecreams/many-icecreams@2x.png 2x"
-            media="(min-width: 1200px)"
-            type="image/png"
-          />
-
-          <source
-            srcset="./images/desktop/many-icecreams/many-icecreams.webp 1x"
-            srcset="./images/desktop/many-icecreams/many-icecreams@2x.webp 2x"
-            media="(min-width: 1200px)"
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/tablet/many-icecreams-tablet/many-icecreams-tablet.png 1x
-            "
-            srcset="
-              ./images/tablet/many-icecreams-tablet/many-icecreams-tablet@2x.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-          />
-
-          <source
-            srcset="
-              ./images/tablet/many-icecreams-tablet/many-icecreams-tablet.webp 1x
-            "
-            srcset="
-              ./images/tablet/many-icecreams-tablet/many-icecreams-tablet@2x.webp 2x
-            "
-            media="(min-width: 768px)"
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/tablet/many-icecreams-tablet/many-icecreams-tablet.png 1x
-            "
-            srcset="
-              ./images/tablet/many-icecreams-tablet/many-icecreams-tablet@2x.png 2x
-            "
-            media="(min-width: 768px)"
-            type="image/png"
-          />
-
-          <source
-            srcset="
-              ./images/tablet/many-icecreams-tablet/many-icecreams-tablet.webp 1x
-            "
-            srcset="
-              ./images/tablet/many-icecreams-tablet/many-icecreams-tablet@2x.webp 2x
-            "
-            media="(min-width: 768px)"
-            type="image/webp"
-          />
-
-          <img
-            class="hero__product-img"
-            src="./images/tablet/many-icecreams-tablet/many-icecreams-tablet.png"
-            alt="Тарелка с шариками аппетитного разноцветного мороженного"
-          />
-        </picture>
-
-        <a class="hero__product-text-thumb" href="">
-          <p class="hero__product-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
-          <svg class="hero__product-text-icon" width="41" height="15">
-            <use href="./images/svg/ic-sprite.svg#arrow"></use>
-          </svg>
-        </a>
-      </div>
-
-      <ul class="hero__trading-place-list">
-        <li class="hero__trading-place-item">
-          <span class="hero__number">16</span>
-          <p class="hero__place">cafes</p>
-        </li>
-        <li class="hero__trading-place-item">
-          <span class="hero__number">23</span>
-          <p class="hero__place">food trucks</p>
-        </li>
-      </ul>
     </picture>
+
+    <h1 class="hero__title">
+      ice cream made with <span class="hero__title-accent">passion</span>
+    </h1>
+
+    <div class="hero__buttons-thumb">
+      <button class="outline-button__products">Products</button>
+      <button class="text-button">How it’s made?</button>
+    </div>
+
+    <div class="hero__product-thumb">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/many-icecreams/many-icecreams.png    1x,
+            ./images/desktop/many-icecreams/many-icecreams@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+
+        <source
+          srcset="
+            ./images/desktop/many-icecreams/many-icecreams.webp    1x,
+            ./images/desktop/many-icecreams/many-icecreams@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            ./images/tablet/many-icecreams-tablet/many-icecreams-tablet.png    1x,
+            ./images/tablet/many-icecreams-tablet/many-icecreams-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+
+        <source
+          srcset="
+            ./images/tablet/many-icecreams-tablet/many-icecreams-tablet.webp    1x,
+            ./images/tablet/many-icecreams-tablet/many-icecreams-tablet@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            ./images/tablet/many-icecreams-tablet/many-icecreams-tablet.png    1x,
+            ./images/tablet/many-icecreams-tablet/many-icecreams-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+
+        <source
+          srcset="
+            ./images/tablet/many-icecreams-tablet/many-icecreams-tablet.webp    1x,
+            ./images/tablet/many-icecreams-tablet/many-icecreams-tablet@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+
+        <img
+          class="hero__product-img"
+          src="./images/tablet/many-icecreams-tablet/many-icecreams-tablet.png"
+          alt="Тарелка с шариками аппетитного разноцветного мороженного"
+        />
+      </picture>
+
+      <a class="hero__product-text-thumb" href="">
+        <p class="hero__product-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <svg class="hero__product-text-icon" width="41" height="15">
+          <use href="./images/svg/ic-sprite.svg#arrow"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="hero__trading-place">
+      <li class="hero__trading-place-item">
+        <span class="hero__number">16</span>
+        <p class="hero__place">cafes</p>
+      </li>
+      <li class="hero__trading-place-item">
+        <span class="hero__number">23</span>
+        <p class="hero__place">food trucks</p>
+      </li>
+    </ul>
   </div>
 </section>

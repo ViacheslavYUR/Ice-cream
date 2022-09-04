@@ -149,7 +149,7 @@
     animation-timing-function: var(--timing-function);
 }
 
-.hero__trading-place-list {
+.hero__trading-place {
     @media screen and (max-width: 767px) {
             display: none;
         }
@@ -162,6 +162,10 @@
         top: 94px;
         right: 32px;
         display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {        
+        right: 16px;
     }
 }
 
@@ -205,19 +209,18 @@
 .hero__icecream-hero {
     position: absolute;
     bottom: 0;
-    left: 50vw;
-    transform: translateX(-48%);
+    left: 83px;
     animation-name: icecream-hero;
     animation-duration: 500ms;
-    animation-timing-function: var(--timing-function);    
+    animation-timing-function: var(--timing-function);
 
     @media screen and (min-width: 768px) {
-        transform: translateX(-5%);
+        left: 365px;
     }
 
     @media screen and (min-width: 1200px) {
-        transform: translateX(-8%);
-    }
+        left: 400px;
+    }    
 }
 
 @keyframes icecream-hero {
