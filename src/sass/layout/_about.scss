@@ -54,9 +54,11 @@
 
 @media screen and (max-width: 767px) {
     .about-img {
-            padding-top: 22px;
+    margin: 0 auto;
+    padding-top: 22px;
         }
-    .about__wrapper {
+    .about__img-wrapper {
+    display: block;
     padding-top: 32px;
         }
     .about__list {
@@ -78,9 +80,10 @@
 
 @media screen and (min-width: 768px) {
     .about-img {
+        max-width: none;
         padding-top: 26px;
         }
-    .about__wrapper {
+    .about__img-wrapper {
         padding-top: 40px;
         }
     .about__list {
@@ -107,7 +110,7 @@
  @media screen and (min-width: 1200px) {
     .about-img {
         padding-top: 39px;}
-    .about__wrapper {
+    .about__img-wrapper {
         padding-top: 82px;
         }
     .about__list {
