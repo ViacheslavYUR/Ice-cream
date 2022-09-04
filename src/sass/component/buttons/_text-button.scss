@@ -21,6 +21,10 @@
 
     @media screen and (max-width: 768px) {
         @include font-style (600, 8px, 10px);
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 10px;
+        padding-right: 10px;
 
         &:hover, &focus {
             @include font-style (700, 9px, 11px);
