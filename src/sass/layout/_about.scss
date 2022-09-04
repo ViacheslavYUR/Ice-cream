@@ -30,7 +30,6 @@
             @include font-style(400, 36px, 45px);
         }
 }
-
 .about__text-ice{
     @include font-style(400, 12px, 21px);
     font-family: var(--secondary-font);

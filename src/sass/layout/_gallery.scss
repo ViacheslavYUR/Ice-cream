@@ -1,0 +1,46 @@
+.gallery {
+  background: linear-gradient(
+    180deg,
+    rgba(132, 161, 120, 1) 23%,
+    rgba(250, 250, 250, 1) 23%
+  );
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.gallery__container {
+  @include centered-flex($type: center);
+}
+
+.gallery__thumb {
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+@media screen and(min-width:768px) {
+  .gallery {
+    background: linear-gradient(
+      180deg,
+      rgba(132, 161, 120, 1) 50%,
+      rgba(250, 250, 250, 1) 50%
+    );
+  }
+
+  .gallery__thumb {
+    border-radius: 18px;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .gallery {
+    background: linear-gradient(
+      180deg,
+      rgba(132, 161, 120, 1) 23%,
+      rgba(250, 250, 250, 1) 23%
+    );
+  }
+
+  .gallery__thumb {
+    border-radius: 24px;
+  }
+}

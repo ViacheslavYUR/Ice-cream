@@ -1,61 +1,76 @@
 .solid-button__buy-now {
-    @extend %button;
-    @include centered-flex();
-    height: 42px;
-    width: 152px;
-    color: #000000;
-    background-color: var(--accent-color);
-    
-    &:hover,
-    &:focus {
-        @include font-style (700, 15px, 18px);
-        background-color: var(--button-hover-color);
+  @extend %button;
+  @include centered-flex();
+  height: 42px;
+  width: 152px;
+  color: #000000;
+  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    @include font-style(700, 15px, 18px);
+    background-color: var(--button-hover-color);
+  }
+
+  &:disabled {
+    background-color: var(--button-dasibled-color);
+  }
+
+  &--display-none {
+    @media screen and (max-width: 767px) {
+      display: none;
     }
-    
-    &:disabled {
-        background-color: var(--button-dasibled-color);
-    }
+  }
+
+  &--centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .solid-button__read-more {
-    @extend %button;
-    @include centered-flex();
-    height: 42px;
-    width: 164px;
-    color: #000000;
-    background-color: var(--accent-color);
+  @extend %button;
+  @include centered-flex();
+  height: 42px;
+  width: 164px;
+  color: #000000;
+  background-color: var(--accent-color);
 
-    &:hover,
-    &:focus {
-        @include font-style (700, 15px, 18px);
-        background-color: var(--button-hover-color);
-    }
+  &:hover,
+  &:focus {
+    @include font-style(700, 15px, 18px);
+    background-color: var(--button-hover-color);
+  }
 
-    &:disabled {
-        background-color: var(--button-dasibled-color);
-    }
+  &:disabled {
+    background-color: var(--button-dasibled-color);
+  }
 }
 
 .solid-button__our-location {
-    @extend %button;
-    @include centered-flex();
-    height: 42px;
-    width: 196px;
-    color: #000000;
-    background-color: var(--accent-color);
+  @extend %button;
+  @include centered-flex();
+  height: 42px;
+  width: 196px;
+  color: #000000;
+  background-color: var(--accent-color);
 
-    &:hover,
-    &:focus {
-        @include font-style (700, 15px, 18px);
-        background-color: var(--button-hover-color);
-    }
+  &:hover,
+  &:focus {
+    @include font-style(700, 15px, 18px);
+    background-color: var(--button-hover-color);
+  }
 
-    &:disabled {
-        background-color: var(--button-dasibled-color);
-    }
+  &:disabled {
+    background-color: var(--button-dasibled-color);
+  }
 }
 
 .solid-button__icon {
-    margin-left: 12px;
-    fill: currentColor;
+  margin-left: 10px;
+  fill: currentColor;
 }
+
+
+// код для вставки svg class="solid-button__icon"
+// <svg class="solid-button__icon"width="7" height="10"><use href="./images/svg/ic-sprite.svg#vector"></use></svg>
