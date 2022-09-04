@@ -100,13 +100,15 @@
   align-items: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .menu-container.is-open .header-solid-button {
+@media screen and (min-width: 768px) {
+  .menu-container.is-open .solid-button__buy-now {
     display: none;
   }
-  .header-solid-button--main {
-    margin-right: 0;
+
+  .header__solid-button {
+    z-index: 100;
   }
+
   .logo {
     flex-grow: 1;
   }
@@ -117,8 +119,13 @@
 }
 
 @media screen and (max-width: 767px) {
-  .header-solid-button--main {
+  .header__solid-button {
     display: none;
+  }
+
+  .solid-button__buy-now {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
