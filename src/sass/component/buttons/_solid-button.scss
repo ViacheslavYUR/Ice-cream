@@ -1,61 +1,86 @@
 .solid-button__buy-now {
-    @extend %button;
-    @include centered-flex();
-    height: 42px;
-    width: 152px;
-    color: #000000;
-    background-color: var(--accent-color);
-    
-    &:hover,
-    &:focus {
-        @include font-style (700, 15px, 18px);
-        background-color: var(--button-hover-color);
-    }
-    
-    &:disabled {
-        background-color: var(--button-dasibled-color);
-    }
+  @extend %button;
+  @include centered-flex();
+  height: 42px;
+  width: 152px;
+  color: #000000;
+  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    @include font-style(700, 15px, 18px);
+    background-color: var(--button-hover-color);
+  }
+
+  &:disabled {
+    background-color: var(--button-dasibled-color);
+  }
 }
 
 .solid-button__read-more {
-    @extend %button;
-    @include centered-flex();
-    height: 42px;
-    width: 164px;
-    color: #000000;
-    background-color: var(--accent-color);
+  @extend %button;
+  @include centered-flex();
+  height: 42px;
+  width: 164px;
+  color: #000000;
+  background-color: var(--accent-color);
 
-    &:hover,
-    &:focus {
-        @include font-style (700, 15px, 18px);
-        background-color: var(--button-hover-color);
-    }
+  &:hover,
+  &:focus {
+    @include font-style(700, 15px, 18px);
+    background-color: var(--button-hover-color);
+  }
 
-    &:disabled {
-        background-color: var(--button-dasibled-color);
-    }
+  &:disabled {
+    background-color: var(--button-dasibled-color);
+  }
 }
 
 .solid-button__our-location {
-    @extend %button;
-    @include centered-flex();
-    height: 42px;
-    width: 196px;
-    color: #000000;
-    background-color: var(--accent-color);
+  @extend %button;
+  @include centered-flex();
+  height: 42px;
+  width: 196px;
+  color: #000000;
+  background-color: var(--accent-color);
 
-    &:hover,
-    &:focus {
-        @include font-style (700, 15px, 18px);
-        background-color: var(--button-hover-color);
-    }
+  &:hover,
+  &:focus {
+    @include font-style(700, 15px, 18px);
+    background-color: var(--button-hover-color);
+  }
 
-    &:disabled {
-        background-color: var(--button-dasibled-color);
-    }
+  &:disabled {
+    background-color: var(--button-dasibled-color);
+  }
 }
 
 .solid-button__icon {
-    margin-left: 12px;
-    fill: currentColor;
+  margin-left: 12px;
+  fill: currentColor;
+}
+
+.header-solid-button {
+  @extend %button;
+  @include centered-flex();
+  gap: 16px;
+  padding: 20px 34px;
+  color: #000000;
+  background-color: var(--accent-color);
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+
+  &:hover,
+  &:focus {
+    @include font-style(700, 15px, 18px);
+    background-color: var(--button-hover-color);
+  }
+
+  &:disabled {
+    background-color: var(--button-dasibled-color);
+  }
+    .header-solid-button__icon {
+      fill:currentColor;
+    }
 }
