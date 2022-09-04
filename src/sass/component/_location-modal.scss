@@ -41,6 +41,7 @@
         min-width: 448px;
         max-height: 260px;
         margin-bottom: 32px;
+        border-radius: 10px;
     }
 
     @media screen and (max-width: 767px) {
@@ -60,5 +61,6 @@
         margin-bottom: 20px;
         width: 224px;
         height: 200px;
+        border-radius: 10px;
     }
 }
