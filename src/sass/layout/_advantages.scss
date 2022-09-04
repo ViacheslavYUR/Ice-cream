@@ -1,0 +1,132 @@
+.advantages {
+    padding-bottom: 36px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-list__number {
+  margin-bottom: 18px;
+  @include font-style(700, 36px, 42px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: (var(--secondary-text-color));
+}
+
+.advantages-list__text {
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: var(--body-font-size);
+  line-height: 170%;
+  text-align: center;
+  color: (var(--secondary-text-color));
+}
+
+.icon-cow::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--accent-color);
+  background-image: url(../images/png/cow.png);
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+  background-position: center center;
+  margin-bottom: 16px;
+}
+
+.icon-weight::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--accent-color);
+  background-image: url(../images/png/weight.png);
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+  background-position: center center;
+  margin-bottom: 16px;
+}
+
+.ice-cream::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--accent-color);
+  background-image: url(../images/png/ice.png);
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+  background-position: center center;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-bottom: 40px;
+  }
+
+  .advantages-list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .advantages-list__item {
+    flex-basis: calc((100% - 240px) / 3);
+  }
+
+  .advantages-list__number {
+    margin-bottom: 16px;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .advantages-list__text {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 174%;
+  }
+
+  .icon-cow::before,
+  .icon-weight::before,
+  .ice-cream::before {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-bottom: 86px;
+  }
+
+  .advantages-list__item {
+    flex-basis: calc((100% - 96px) / 3);
+  }
+
+  .advantages-list__number {
+    font-size: 58px;
+    line-height: 1.22;
+  }
+
+  .advantages-list__text {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
+
+  .icon-cow::before,
+  .icon-weight::before,
+  .ice-cream::before {
+    margin-bottom: 40px;
+  }
+}

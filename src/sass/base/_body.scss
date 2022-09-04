@@ -4,3 +4,7 @@ body {
     font-family: var(--secondary-font);
     font-size:var(--body-font-size);
 }
+
+.modal-open {
+    overflow: hidden;
+}

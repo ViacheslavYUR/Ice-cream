@@ -1,3 +1,269 @@
 .hero {
+    height: 502px;
+    padding-top: 110px;
+    padding-bottom: 0;
+    color: var(--secondary-text-color);
+    background-image: url(../images/mobile/dots-mobile/dots-mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
     background-color: var(--main-bg-color);
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        height: 415px;
+        padding-top: 104px;
+        background-image: url(../images/tablet/dots-tablet/dots-tablet.png);
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 664px;
+        padding-top: 118px;
+        background-image: url(../images/desktop/dots/dots.png);
+    }
+}
+
+.hero__title {
+    width: 247px;
+    Font-family: var(--primary-font);
+    @include font-style(400, 26px, 33px);
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    animation-name: hero-title;
+    animation-duration: 500ms;
+    animation-timing-function: var(--timing-function);
+
+    @media screen and (min-width: 768px) {
+        width: 181px;
+         @include font-style(400, 18px, 23px);
+        margin-bottom: 20px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+        width: 367px;
+        @include font-style(400, 38px, 48px);
+        margin-bottom: 28px;
+    }
+}
+
+@keyframes hero-title {
+    from {
+        transform: translateX(-100vw);
+    }
+}
+
+.hero__title-accent {
+    @include font-style(400, 34px, 33px);
+
+    @media screen and (min-width: 768px) {
+        @include font-style(400, 24px, 25px);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 367px;
+        @include font-style(400, 38px, 48px);
+        margin-bottom: 20px;
+    }
+}
+
+.hero__buttons-thumb {
+    display: flex;
+    animation-name: hero-title;
+    animation-duration: 500ms;
+    animation-delay: 10ms;
+    animation-timing-function: var(--timing-function);
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 28px;
+    }
+}
+
+.hero__buttons-thumb .outline-button__products {
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+    }
+}
+
+.hero__product-thumb {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items:flex-end;        
+    }
+}
+
+.hero__product-img {
+    margin-right: 33px;
+    animation-name: product-img;
+    animation-duration: 500ms;
+    animation-timing-function: var(--timing-function);
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 14px;
+    }
+}
+
+@keyframes product-img {
+    from {
+            transform: translateY(100vw);
+        }
+}
+
+.hero__product-text-thumb {
+    color: var(--secondary-text-color);
+
+    @media screen and (min-width:768px) {
+            transform: translateY(-5px)
+        }    
+    
+    @media screen and (min-width:1200px) {
+        transform: translateY(-30px)
+    }
+}
+
+.hero__product-text {
+    @include font-style(400, 12px, 17px);
+    display: block;
+    width: 151px;
+    margin-bottom: 13px;
+    animation-name: product-img;
+    animation-duration: 500ms;
+    animation-timing-function: var(--timing-function);
+    
+    @media screen and (min-width:1200px) {
+        @include font-style(400, 14px, 20px);
+        width: 200px;
+    }
+}
+
+.hero__link {
+    display: block;
+    width: 41px;
+    height: 15px;
+    color: currentColor;
+    transform-origin: left;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover {
+        transform: scale(1.25);
+    }
+
+    &:focus {
+        transform: scale(1.5);
+    }
+}
+
+.hero__arrow {
+    fill: currentColor;
+    position: absolute;
+    animation-name: product-img;
+    display: block;    
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-timing-function: var(--timing-function);
+}
+
+.hero__trading-place {
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 94px;
+        right: 32px;
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {        
+        right: 16px;
+    }
+}
+
+.hero__trading-place-item:first-child {
+    margin-bottom: 20px;
+}
+
+.hero__number {
+    @include font-style(900, 28px, 34px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 4px;
+    color: #000000;
+    animation-name: hero__number;
+    animation-duration: 500ms;
+    animation-timing-function: var(--timing-function);
+    
+    @media screen and (min-width: 1200px) {
+        @include font-style(900, 46px, 56px);
+    }
+}
+
+@keyframes hero__number {
+    from {
+        transform: translateX(100vw);
+    }
+}
+
+.hero__place {
+    @include font-style(400, 8px, 10px);
+    text-align: right;
+    animation-name: hero__place;
+    animation-duration: 500ms;
+    animation-delay: 100ms;
+    animation-timing-function: var(--timing-function);
+
+    @media screen and (min-width: 1200px) {
+        @include font-style(400, 14px, 17px);
+    }
+}
+
+@keyframes hero__place {
+    from {
+        transform: translateX(100vw);
+    }
+}
+
+.hero__icecream-hero {
+    position: absolute;
+    bottom: 0;
+    animation-name: icecream-hero;
+    animation-duration: 500ms;
+    animation-timing-function: var(--timing-function);
+
+    @media screen and (max-width: 479px) {
+            left: 50vw;
+            transform: translateX(-47%);
+        }
+
+    @media screen and (min-width: 480px) {
+        left: 117px;
+    }
+
+    @media screen and (min-width: 768px) {
+        left: 365px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 556px;
+    }    
+}
+
+@keyframes icecream-hero {
+    from {
+        transform: translateX(-150%) translateY(150%);
+        rotate: -180deg;
+        scale: 0;
+    }
 }

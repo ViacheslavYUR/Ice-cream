@@ -3,12 +3,19 @@
     @include centered-flex();
     height: 42px;
     width: 134px;
-    border: 2px solid var(--accent-color);        
+    color: var(--main-text-color);    
     background-color: transparent;
+    border: 2px solid var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
 
-    &:hover, &:focus {
-        @include font-style (700, 15px, 18px);
+    &:hover {
         border: 2px solid var(--button-hover-color);
+    }
+
+    &:focus {
+        border: 2px solid var(--button-hover-color);
+        color: var(--secondary-text-color);
     }
 
     &:disabled {
@@ -21,9 +28,13 @@
         border-radius: 8px;
         @include font-style (600, 8px, 10px);
 
-        &:hover, &:focus {
-            @include font-style (700, 9px, 11px);
+        &:hover {
             border: 2px solid var(--button-hover-color);
+        }
+
+        &:focus {
+            border: 2px solid var(--button-hover-color);
+            color: var(--secondary-text-color);
         }
     }
 }
@@ -34,15 +45,24 @@
     height: 42px;
     width: 196px;
     border: 2px solid var(--accent-color);
-    color: #FCFCFC;
+    color: var(--main-text-color);
     background-color: transparent;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
     
-    &:hover, &:focus {
-        @include font-style (700, 15px, 18px);
+    &:hover {
         border: 2px solid var(--button-hover-color);
+    }
+    
+    &:focus {
+        border: 2px solid var(--button-hover-color);
+        color: var(--secondary-text-color);
     }
 
     &:disabled {
         border: 2px solid var(--button-dasibled-color);
     }    
 }
+
+// код для вставки svg class="solid-button__icon"
+// <svg class="solid-button__icon"width="7" height="10"><use href="./images/svg/ic-sprite.svg#vector"></use></svg>
