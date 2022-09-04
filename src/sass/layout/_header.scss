@@ -31,6 +31,14 @@
   line-height: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-menu-open {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+  }
+}
+
 .mobile-menu-open__icon {
   fill: #fff;
 }
