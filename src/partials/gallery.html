@@ -1,3 +1,19 @@
-<section class="section">
-  <div class="container">container</div>
+<section class="section gallery">
+  <div class="container gallery__container">
+    <picture class="gallery__thumb">
+      <source srcset="
+            ./images/desktop/gallary-1/gallary-1.jpg    1x,
+            ./images/desktop/gallary-1/gallary-1@2x.jpg 2x
+          " media="(min-width: 1200px)" />
+      <source srcset="
+            ./images/tablet/gallary-1-tablet/gallary-1-tablet.jpg    1x,
+            ./images/tablet/gallary-1-tablet/gallary-1-tablet@2x.jpg 2x
+          " media="(min-width: 768px) " />
+      <source srcset="
+            ./images/mobile/gallary-1-mobile/gallary-1-mobile.jpg    1x,
+            ./images/mobile/gallary-1-mobile/gallary-1-mobile@2x.jpg 2x
+          " media="(max-width: 480px)" />
+      <img src="./images/desktop/gallary-1/gallary-1.jpg" alt="Picture ice-cream" />
+    </picture>
+  </div>
 </section>
