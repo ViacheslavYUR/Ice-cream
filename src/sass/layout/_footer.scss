@@ -38,6 +38,8 @@
 }
 
 .footer__social-link {
+
+   gap: 28px;
    margin-bottom: 38px;
    display: flex;
    justify-content: center;
@@ -155,7 +157,7 @@
         content: '';
         left: 0;
         right: 0;
-        height: 0px;
+       
         border: 1px solid #e1e1e1;
       }
 
@@ -216,7 +218,7 @@
         content: '';
         left: 0;
         right: 0;
-        height: 0px;
+       
         border: 1px solid #e1e1e1;
       }
 
