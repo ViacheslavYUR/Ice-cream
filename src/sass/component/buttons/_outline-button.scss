@@ -3,8 +3,9 @@
     @include centered-flex();
     height: 42px;
     width: 134px;
-    border: 2px solid var(--accent-color);        
+    color: var(--main-text-color);    
     background-color: transparent;
+    border: 2px solid var(--accent-color);
 
     &:hover, &:focus {
         @include font-style (700, 15px, 18px);
@@ -34,7 +35,7 @@
     height: 42px;
     width: 196px;
     border: 2px solid var(--accent-color);
-    color: #FCFCFC;
+    color: var(--main-text-color);
     background-color: transparent;
     
     &:hover, &:focus {
@@ -46,3 +47,6 @@
         border: 2px solid var(--button-dasibled-color);
     }    
 }
+
+// код для вставки svg class="solid-button__icon"
+// <svg class="solid-button__icon"width="7" height="10"><use href="./images/svg/ic-sprite.svg#vector"></use></svg>
