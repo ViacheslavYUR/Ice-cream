@@ -55,20 +55,35 @@
     }
 }
 
-.read-modal__video {
-    display: block;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 224px;
-    height: 199px;
-    background-color: #000000;
+.read-modal__video-mobile {
 
     @media screen and (min-width: 768px) {
-        min-width: 448px;
-        max-height: 205px;
+            display: none;
+        }
+    
+    @media screen and (max-width: 767px) {
+        display: block;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+    }
+}
+
+.read-modal__video-desktop {
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        border-radius: 10px;
         margin-bottom: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
     }
 }
 
