@@ -71,11 +71,15 @@
     animation-name: hero-title;
     animation-duration: 500ms;
     animation-delay: 10ms;
-    animation-timing-function: var(--timing-function);
+    animation-timing-function: var(--timing-function);   
 
     @media screen and (min-width: 768px) {
         margin-bottom: 28px;
     }
+}
+
+.hero__buttons-thumb>a {
+    z-index: 2;
 }
 
 .hero__buttons-thumb .outline-button__products {
