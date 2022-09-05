@@ -1,8 +1,6 @@
 .outline-button__products {
     @extend %button;
-    @include centered-flex();
-    height: 42px;
-    width: 134px;
+    padding: 12px 34px;
     color: var(--main-text-color);    
     background-color: transparent;
     border: 2px solid var(--accent-color);
@@ -23,8 +21,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        height: 24px;
-        width: 62px;
+        padding: 9px 13px;
         border-radius: 8px;
         @include font-style (600, 8px, 10px);
 
@@ -41,9 +38,7 @@
 
 .outline-button__franchise {
     @extend %button;
-    @include centered-flex();
-    height: 42px;
-    width: 196px;
+    padding: 12px 46px;
     border: 2px solid var(--accent-color);
     color: var(--main-text-color);
     background-color: transparent;

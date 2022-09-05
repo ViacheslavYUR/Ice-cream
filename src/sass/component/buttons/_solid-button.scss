@@ -1,8 +1,6 @@
 .solid-button__buy-now {
   @extend %button;
-  @include centered-flex();
-  height: 42px;
-  width: 152px;
+  padding: 12px 34px;
   color: #000000;
   background-color: var(--accent-color);
   transition-duration: 250ms;
@@ -35,9 +33,7 @@
 
 .solid-button__read-more {
   @extend %button;
-  @include centered-flex();
-  height: 42px;
-  width: 164px;
+  hpadding: 12px 34px;
   color: #000000;
   background-color: var(--accent-color);
   transition-duration: 250ms;
@@ -59,9 +55,7 @@
 
 .solid-button__our-location {
   @extend %button;
-  @include centered-flex();
-  height: 42px;
-  width: 196px;
+  padding: 12px 34px;
   margin-left: auto;
   margin-right: auto;
   color: #000000;
@@ -85,9 +79,7 @@
 
 .solid-button__modal {
   @extend %button;
-  @include centered-flex();
-  height: 42px;
-  width: 150px;
+  padding: 12px 34px;
   margin-left: auto;
   margin-right: auto;
   color: #000000;
