@@ -1,0 +1,102 @@
+<div class="backdrop backdrop--hidden" ingredients-modal>
+  <div class="ingredients-modal">
+    <button class="read-modal__close-btn" type="button" ingredients-modal-close>
+      <svg width="11" height="11">
+        <use href="./images/svg/ic-sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <h3 class="ingredients-modal__title">Chololate icecream</h3>
+    <picture class="ingredients-modal__image">
+      <img
+        src="./images/desktop/chololate-icecream/chololate-icecream.png"
+        alt="Рожек с аппетитным шоколадным мороженным"
+        width="130"
+        height="130"
+      />
+    </picture>
+
+    <h4 class="ingredients__nutrients">nutrients</h4>
+
+    <ul class="ingredients__list">
+      <li class="ingredients__compounds">
+        <p class="ingredients__number">
+          320<span class="ingredients__value">kcal</span>
+        </p>
+      </li>
+      <li class="ingredients__compounds">
+        <p class="ingredients__number">
+          4g<span class="ingredients__value">Prote...</span>
+        </p>
+      </li>
+      <li class="ingredients__compounds">
+        <p class="ingredients__number">
+          8,2g<span class="ingredients__value">Fats</span>
+        </p>
+      </li>
+      <li class="ingredients__compounds">
+        <p class="ingredients__number">
+          40,4g<span class="ingredients__value">Carbs</span>
+        </p>
+      </li>
+    </ul>
+
+    <table>
+      <caption>
+        Ingredients
+      </caption>
+      <tr>
+        <td>Milk</td>
+        <td>100ml</td>
+      </tr>
+      <tr>
+        <td>Belgian chocolate</td>
+        <td>20g</td>
+      </tr>
+      <tr>
+        <td>Cream</td>
+        <td>150 ml</td>
+      </tr>
+      <tr>
+        <td>Cocoa powder</td>
+        <td>30g</td>
+      </tr>
+      <tr>
+        <td>Sugar</td>
+        <td>40g</td>
+      </tr>
+      <tr>
+        <td>Vanilla sugar</td>
+        <td>10g</td>
+      </tr>
+    </table>
+
+    <form class="ingredients__form">
+      <label class="ingredients__label" for="name"></label>
+      <input
+        class="ingredients__input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        autofocus
+      />
+      <label class="ingredients__label" for="phone"></label>
+      <input
+        class="call-back-form__input"
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Phone"
+      />
+      <label class="ingredients__label" for="comment"></label>
+      <textarea
+        class="ingredients__input ingredients__input--comment"
+        name="comment"
+        id="comment"
+        placeholder="Comment"
+      ></textarea>
+      <button class="solid-button__modal" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
