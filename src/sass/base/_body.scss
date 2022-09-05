@@ -2,6 +2,8 @@ body {
   color: var(--main-text-color);
   font-family: var(--secondary-font);
   font-size: var(--body-font-size);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .modal-open {
