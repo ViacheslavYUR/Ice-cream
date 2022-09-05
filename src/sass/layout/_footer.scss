@@ -88,7 +88,6 @@
   align-items: center;
   width: 34px;
   height: 34px;
-  margin-bottom: 38px;
   border-radius: 50%;
   background-color: var(--accent-color);
   fill: var(--main-bg-color);
@@ -96,6 +95,9 @@
   &:hover,
   &:focus {
     fill: #ffffff;
+  }
+  &:focus {
+    transform: scale(1.25);
   }
   @media screen and (min-width: 768px) {
     .footer__list-social {
