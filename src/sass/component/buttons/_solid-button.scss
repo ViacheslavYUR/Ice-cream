@@ -33,7 +33,7 @@
 
 .solid-button__read-more {
   @extend %button;
-  hpadding: 12px 34px;
+  padding: 12px 34px;
   color: #000000;
   background-color: var(--accent-color);
   transition-duration: 250ms;
