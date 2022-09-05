@@ -1,17 +1,17 @@
-.section-customer {
-  //   padding-top: 185px;
-  padding-bottom: 395px;
-  @media screen and(min-width:768px) {
-    padding: 0;
-  }
-}
 
-.customer {
+.section-customer {
+  padding-top: 185px;
+    padding-bottom: 395px;
   text-align: center;
 
   background-image: url(../images/mobile/ice-cream-background-mobile/ice-cream-background-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  max-width: 1200px;
+  
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -34,7 +34,7 @@
 
   @media screen and(min-width:1200px) {
     background-image: url(../images/desktop/ice-cream-background/ice-cream-background.jpg);
-    padding-top: 450px;
+    padding-top: 455px;
     padding-bottom: 195px;
 
     @media screen and (min-device-pixel-ratio: 2),
