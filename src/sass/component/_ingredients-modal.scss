@@ -22,14 +22,15 @@
 }
 
 .ingredients-modal {
-    @include centered-flex();
+    @include centered-flex(flex-start);
     flex-direction: column;
+    
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 280px;
-    height: 459px;
+    height: 990px;
     padding: 28px 20px;
     z-index: 888;
     background-color: white;
@@ -90,6 +91,3 @@
 
 
 
-.ingredients-modal__text {
-    @include font-style(400, 14px, 20px);
-}
