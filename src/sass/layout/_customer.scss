@@ -91,19 +91,3 @@
   }
 }
 
-.paginator {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-}
-
-.paginator__item {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #d9d9d9;
-
-  &:first-child {
-    background-color: var(--main-bg-color);
-  }
-}
