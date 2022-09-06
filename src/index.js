@@ -6,3 +6,4 @@ import './js/ingredients-modal';
 import './js/products-overlay';
 import './js/products-overlay-2';
 import './js/products-overlay-3';
+import './js/modal-buynow';
