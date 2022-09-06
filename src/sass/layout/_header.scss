@@ -35,8 +35,9 @@
 @media screen and (max-width: 767px) {
   .mobile-menu-open {
     position: absolute;
-    top: 16px;
+    top: 50%;
     right: 20px;
+    transform: translateY(-50%);
   }
 }
 
@@ -96,6 +97,7 @@
 }
 
 .page-header__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,14 +126,7 @@
     z-index: 100;
   }
 
-  // .logo {
-  //   flex-grow: 1;
-  // }
-
-  // .mobile-menu-open {
-  //   margin-right: 30px;
-  // }
-}
+  }
 
 @media screen and (max-width: 767px) {
   .header__solid-button {
