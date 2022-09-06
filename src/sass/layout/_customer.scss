@@ -61,6 +61,12 @@
 
   margin-bottom: 30px;
 
+  @media screen and(max-width:767px){
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media screen and(min-width:768px) {
     @include font-style(400, 14px, 26px);
     letter-spacing: 0.04em;
