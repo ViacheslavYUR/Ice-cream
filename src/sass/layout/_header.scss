@@ -50,22 +50,24 @@
 }
 
 .menu-container {
-  position: fixed;
-  transform: translateX(100%);
-  transition: transform 500ms var(--timing-function),
-    opacity 500ms var(--timing-function),
-    visibility 500ms var(--timing-function);
+  position: relative;
+  // transform: translateX(100%);
+  // transition: transform 500ms var(--timing-function),
+  //   opacity 500ms var(--timing-function),
+  //   visibility 500ms var(--timing-function);
   width: 320px;
-  height: 100vh;
-  z-index: 1000;
-  right: 0;
-  top: 0;
+  // height: 100vh;
+
+  // right: 0;
+  // top: 0;
   overflow: scroll;
-  background-color: var(--main-bg-color);
-  // box-shadow: 0 0 0 100vmax rgba(100, 100, 0, 0.5);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  // background-color: var(--main-bg-color);
+  //  box-shadow: 0 0 0 100vmax rgba(100, 100, 0, 0.5);
+  // opacity: 0;
+  // visibility: hidden;
+  // pointer-events: none;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -79,12 +81,7 @@
   }
 }
 
-.menu-container.is-open {
-  transform: translateX(0);
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
-}
+
 
 .mobile-menu-close {
   position: absolute;
@@ -129,9 +126,7 @@
     display: none;
   }
 
-  .header__solid-button {
-    z-index: 100;
-  }
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -229,13 +224,31 @@
   }
 }
 
-.backdrop--hidden {
+.backdrop-header {
+  background-color: var(--main-bg-color);
   opacity: 0;
-  pointer-events: none;
   visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: transform 250ms var(--timing-function);
 }
 
-.backdrop--hidden .menu-container {
-transform: scale(0.9) translate(-50%, -50%);
+.backdrop-header.is-open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
 }
 
+// .backdrop--hidden {
+//   opacity: 0;
+//   pointer-events: none;
+//   visibility: hidden;
+// }
+
+// .backdrop--hidden .menu-container {
+//   transform: scale(0.9) translate(-50%, -50%);
+// }
