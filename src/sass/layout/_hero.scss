@@ -78,6 +78,10 @@
     }
 }
 
+.hero__buttons-thumb>li {
+    @include centered-flex();
+}
+
 .hero__buttons-thumb>a {
     z-index: 2;
 }

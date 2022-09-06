@@ -44,8 +44,7 @@
         max-width: 280px;
     }
 
-    @media screen and (min-width: 768px), (orientation: landscape) {
-        top: 0;
+    @media screen and (min-width: 768px), (orientation: landscape) {        
         width: 528px;
         transform: translateX(-50%);
     }
@@ -53,8 +52,11 @@
     @media screen and (min-width: 1200px) {
         max-height: 998px;
         top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width: 1200px) and (orientation: landscape) {
+        max-height: 100vh;
     }
 }
 
