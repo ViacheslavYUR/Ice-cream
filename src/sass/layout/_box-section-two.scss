@@ -1,3 +1,36 @@
 .two-section {
-  background-color: tomato;
-}
+        background-image: url(../images/mobile/ice-cream-background-mobile/ice-cream-background-mobile.jpg),
+            linear-gradient(to bottom, #ffff 46%, var(--main-bg-color) 46%);
+        background-repeat: no-repeat;
+        background-position: top;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/mobile/ice-cream-background-mobile/ice-cream-background-mobile@2x.jpg);
+        }
+
+        @media screen and(min-width:768px) {
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(../images/tablet/ice-cream-background-tablet/ice-cream-background-tablet@2x.jpg);
+            }
+
+            background-image: url(../images/tablet/ice-cream-background-tablet/ice-cream-background-tablet.jpg),
+            linear-gradient(to bottom, #ffff 68.5%, var(--main-bg-color) 68.5%);
+        }
+
+        @media screen and(min-width:1200px) {
+            background-image: url(../images/desktop/ice-cream-background/ice-cream-background.jpg),
+                linear-gradient(to bottom, #ffff 60.5%, var(--main-bg-color) 60.5%);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(../images/desktop/ice-cream-background/ice-cream-background@2x.jpg);
+            }
+        }
+    }
+
