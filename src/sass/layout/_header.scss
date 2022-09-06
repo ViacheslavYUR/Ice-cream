@@ -52,40 +52,6 @@
   fill: #fff;
 }
 
-<<<<<<< Updated upstream
-=======
-@media screen and (max-width:1199px) {
-  .menu-container {
-      position: fixed;
-      transform: translateX(-100%);
-      transition: transform 500ms var(--timing-function),
-        opacity 500ms var(--timing-function),
-        visibility 500ms var(--timing-function);
-      width: 100vw;
-      height: 100vh;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      overflow: scroll;
-      background-color: var(--main-bg-color);
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      text-align: center;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
-  
-    .menu-container.is-open {
-      transform: translateX(0);
-      opacity: 1;
-      visibility: visible;
-      pointer-events: initial;
-    }
-}
->>>>>>> Stashed changes
 
 
 .mobile-menu-close {
