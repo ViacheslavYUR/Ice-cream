@@ -46,7 +46,7 @@
 }
 .about__text-mobile {
   @include font-style(400, 12px, 19px);
-  padding-top: 8px;
+  margin-top: 8px;
   font-family: var(--secondary-font);
   letter-spacing: 0.04em;
   color: var(--secondary-text-color);
@@ -94,30 +94,34 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about__title {
+    margin-bottom: 72px;
+  }
   .about-img {
     max-width: none;
     padding-top: 26px;
-  }
-  .about__img-wrapper {
-    padding-top: 40px;
-  }
-  .about__list {
-    padding-top: 79px;
   }
   .about__position {
     display: flex;
   }
   .about__text-position {
-    padding-left: 32px;
-    padding-right: 34px;
+    margin-top: 7px;
+    margin-left: 32px;
+    margin-right: 34px;
   }
+  .about__text-ice{
+    width: 334px;
+    }
   .about__text {
-    padding-top: 8px;
+    line-height: 1.75;
+    width: 334px;
+    margin-top: 8px;
   }
   .about-bt {
     margin-top: 48px;
   }
   .about__text-mobile {
+    width: 334px;
     @include font-style(400, 12px, 23px);
   }
 }
