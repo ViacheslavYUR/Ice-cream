@@ -1,6 +1,6 @@
 .section-customer {
   padding-top: 80px;
-  padding-bottom: 395px;
+  // padding-bottom: 395px;
   text-align: center;
 
   // background-image: url(../images/mobile/ice-cream-background-mobile/ice-cream-background-mobile.jpg);
@@ -11,15 +11,15 @@
 
   margin-left: auto;
   margin-right: auto;
-  
-@media screen and(min-width:768px) {
+
+  @media screen and(min-width:768px) {
     padding-top: 60px;
-    padding-bottom: 385px;
+    // padding-bottom: 385px;
   }
 
   @media screen and(min-width:1200px) {
     padding-top: 455px;
-    padding-bottom: 195px;
+    // padding-bottom: 195px;
   }
   // @media screen and (min-device-pixel-ratio: 2),
   //   screen and (min-resolution: 192dpi),
