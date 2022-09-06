@@ -103,6 +103,8 @@
   }
 
   @media screen and (max-width: 767px) {
+    @include font-style (600, 12, 15);
+    padding: 7px 37px;
     height: 32px;
   }
 }
@@ -110,6 +112,31 @@
 .solid-button__icon {
   margin-left: 10px;
   fill: currentColor;
+}
+
+.scroll-up-btn {
+  @include centered-flex();
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  opacity: .6;
+  color: black;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  box-shadow: 1px 49px 41px -25px rgba(0, 0, 0, 0.51);
+
+  &:hover, &:focus {
+    opacity: 1;
+    scale: 1.25;
+    }
+  
+  &__icon {
+    fill: var(--button-hover-color);
+  }
 }
 
 

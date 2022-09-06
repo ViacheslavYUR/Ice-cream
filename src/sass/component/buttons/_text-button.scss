@@ -24,12 +24,13 @@
         color: var(--button-dasibled-color);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1199px) {
         @include font-style (600, 8px, 10px);
         padding-top: 9px;
         padding-bottom: 9px;
         padding-left: 10px;
         padding-right: 10px;
+        z-index: 2;
         
         &:hover {
             color: var(--button-hover-color);

@@ -12,11 +12,21 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    border: 2px solid var(--accent-color);
 
     @media screen and (min-width: 768px) {
+        top: 0;
+        transform: translateX(-50%);
+        overflow-y: scroll;
         width: 568px;
-        height: 458px;
-        padding: 32px 60px;
+        height: 460px;
+        padding: 31px 60px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        top: 50%;
+        overflow: hidden;
+        transform: translate(-50%, -50%);
     }
 }
 
