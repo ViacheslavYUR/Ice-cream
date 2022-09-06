@@ -53,7 +53,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .section{
+  .section-about{
     padding-bottom: 0;
   }
   .about-img {
@@ -94,6 +94,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .section-about {
+    padding-bottom: 0;
+  }
   .about__title {
     margin-bottom: 72px;
   }
@@ -107,11 +110,11 @@
   .about__text-position {
     margin-top: 7px;
     margin-left: 32px;
-    margin-right: 34px;
+    margin-right: 32px;
   }
   .about__text-ice{
     width: 334px;
-    }
+  }
   .about__text {
     line-height: 1.75;
     width: 334px;
@@ -127,27 +130,27 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .about__title {
+    margin-bottom: 82px;
+  }
   .about-img {
     padding-top: 39px;
   }
-  .about__img-wrapper {
-    padding-top: 82px;
-  }
-  .about__list {
-    padding-top: 172px;
-  }
   .about__text-position {
-    padding-left: 100px;
-    padding-right: 121px;
+    margin-top: 90px;
+    margin-left: 100px;
+    margin-right: 121px;
   }
   .about__text-ice {
+    width: 463px;
     @include font-style(400, 16px, 28px);
   }
   .about__text {
-    padding-top: 8px;
+    width: 463px;
     @include font-style(400, 14px, 28px);
   }
   .about__text-mobile {
+    width: 463px;
     @include font-style(400, 14px, 28px);
   }
 }
