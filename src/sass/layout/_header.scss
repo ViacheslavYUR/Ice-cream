@@ -2,7 +2,7 @@
   position: absolute;
   padding-top: 16px;
   padding-bottom: 16px;
-  width: 100vw;
+  width: 100%;
   z-index: 10;
 }
 
@@ -107,7 +107,7 @@
   .page-header__container {
     justify-content: flex-end;
   }
-  
+
   .solid-button__buy-now {
     margin-left: 32px;
   }
@@ -125,8 +125,7 @@
   .header__solid-button {
     z-index: 100;
   }
-
-  }
+}
 
 @media screen and (max-width: 767px) {
   .header__solid-button {
