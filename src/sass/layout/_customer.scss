@@ -1,48 +1,47 @@
-
 .section-customer {
   padding-top: 80px;
-    padding-bottom: 395px;
+  padding-bottom: 395px;
   text-align: center;
 
-  background-image: url(../images/mobile/ice-cream-background-mobile/ice-cream-background-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  max-width: 1200px;
-  
+  // background-image: url(../images/mobile/ice-cream-background-mobile/ice-cream-background-mobile.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  // max-width: 1200px;
+
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/mobile/ice-cream-background-mobile/ice-cream-background-mobile@2x.jpg);
-  }
+  // @media screen and (min-device-pixel-ratio: 2),
+  //   screen and (min-resolution: 192dpi),
+  //   screen and (min-resolution: 2dppx) {
+  //   background-image: url(../images/mobile/ice-cream-background-mobile/ice-cream-background-mobile@2x.jpg);
+  // }
 
-  @media screen and(min-width:768px) {
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/tablet/ice-cream-background-tablet/ice-cream-background-tablet@2x.jpg);
-    }
+  // @media screen and(min-width:768px) {
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     background-image: url(../images/tablet/ice-cream-background-tablet/ice-cream-background-tablet@2x.jpg);
+  //   }
 
-    background-image: url(../images/tablet/ice-cream-background-tablet/ice-cream-background-tablet.jpg);
+  //   background-image: url(../images/tablet/ice-cream-background-tablet/ice-cream-background-tablet.jpg);
 
-    padding-top: 60px;
-    padding-bottom: 385px;
-  }
+  //   padding-top: 60px;
+  //   padding-bottom: 385px;
+  // }
 
-  @media screen and(min-width:1200px) {
-    background-image: url(../images/desktop/ice-cream-background/ice-cream-background.jpg);
-    padding-top: 455px;
-    padding-bottom: 195px;
+  // @media screen and(min-width:1200px) {
+  //   background-image: url(../images/desktop/ice-cream-background/ice-cream-background.jpg);
+  //   padding-top: 455px;
+  //   padding-bottom: 195px;
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/ice-cream-background/ice-cream-background@2x.jpg);
-    }
-  }
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     background-image: url(../images/desktop/ice-cream-background/ice-cream-background@2x.jpg);
+  //   }
+  // }
 }
 
 .customer__img {
@@ -61,7 +60,7 @@
 
   margin-bottom: 30px;
 
-  @media screen and(max-width:767px){
+  @media screen and(max-width:767px) {
     width: 280px;
     margin-left: auto;
     margin-right: auto;
@@ -127,5 +126,5 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
