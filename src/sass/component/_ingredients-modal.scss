@@ -23,35 +23,37 @@
 
 .ingredients-modal {
     @include centered-flex(flex-start);
-    flex-direction: column;
-    
+    flex-direction: column;    
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    max-height: 100vh;
     width: 280px;
-    height: 990px;
     padding: 28px 20px;
-    z-index: 888;
+    z-index: 3000;
     background-color: white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     border: 2px solid var(--accent-color);
+    overflow-y: auto;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 767px) {
+        max-width: 280px;
+    }
+
+    @media screen and (min-width: 768px), (orientation: landscape) {
         top: 0;
+        width: 528px;
         transform: translateX(-50%);
-        overflow-y: scroll;
-        width: 568px;
-        max-height: 449px;
-        padding: 32px 60px;
     }
 
     @media screen and (min-width: 1200px) {
+        max-height: 998px;
         top: 50%;
-        overflow: auto;
+        left: 50%;
         transform: translate(-50%, -50%);
     }
 }
@@ -85,30 +87,39 @@
         background-color: rgba(156, 190, 143, 0.7);
         border-radius: 50%;
         z-index: -1;
-        filter: drop-shadow(0 5 20 rgba(10, 136, 23, 0.25));
+        filter: drop-shadow(0 5 20 rgba(10, 136, 23, 0.25));        
     }
 }
 
 .ingredients__list {
     display: flex;
+    margin-bottom: 39px;
 }
 
-.ingredients__compounds {    
-    @include font-style(500, 10px, 28px);
-    position: relative;
-    display: flex;
+.ingredients__compounds {
+    @include centered-flex(flex-start);
     flex-direction: column;
     width: 53px;
     height: 72px;
+    padding-top: 7px;
     border: 2px solid #9CBE8F;
     border-radius: 40px;
+
+    &:not(:last-child) {
+        margin-right: 9px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 65px;
+        height: 90px;
+        padding-top: 11px;
+    }
 }
 
 .ingredients__number {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    @include font-style(500, 10px, 28px);
+    position: relative;
+    margin-bottom: 16px;
 
     &::after {
         content: "";
@@ -117,19 +128,94 @@
         width: 43px;
         height: 43px;
         border-radius: 50%;
-        background-color: #9CBE8F;
-        z-index: -1;
         top: 50%;
         left: 50%;
-        transform: translate(50%, 50%)
+        transform: translate(-50%, -50%);
+        background-color: #9CBE8F;
+        z-index: -1;
+        filter: drop-shadow(0 6 20 rgba(10, 136, 23, 0.25));
+
+        @media screen and (min-width: 768px) {
+            width: 53px;
+            height: 53px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        @include font-style(500, 12px, 28px);
     }
 }
 
 .ingredients__value {
     @include font-style(400, 10px, 12px);
+
+    @media screen and (min-width: 768px) {
+        @include font-style(400, 12px, 14px);
+    }
+}
+
+.ingredients__table {
+    @include font-style(400, 14px, 24px);
+    width: 100%;
+    margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.ingredients__table td {
+    width: 50%;
+}
 
+.ingredients__caption {
+    @include font-style(500, 20px, 28px);
+    margin-bottom: 24px;
+}
 
+.ingredients__ingredient {
+    text-align: left;
+    padding-bottom: 11px;
+
+    &--no-padding-botoom {
+        padding-bottom: 0;
+    }
+}
+
+.ingredients__amount {
+    text-align: right;
+    padding-bottom: 11px;
+
+    &--no-padding-botoom {
+        padding-bottom: 0;
+    }
+}
+
+.ingredients__form {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 368px;
+    }
+}
+
+.ingredients__input {
+    display: block;
+    height: 42px;
+    width: 100%;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding: 11px 10px;
+
+    &--comment {
+        height: 84px;
+        margin-bottom: 32px;
+        resize: none;
+    }
+
+    &::placeholder {
+        @include font-style(400, 14px, 20px);
+        color: black;
+    }
+
+}

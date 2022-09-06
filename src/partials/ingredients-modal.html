@@ -20,55 +20,61 @@
 
     <ul class="ingredients__list">
       <li class="ingredients__compounds">
-        <p class="ingredients__number">
-          320<span class="ingredients__value">kcal</span>
-        </p>
+        <p class="ingredients__number">320</p>
+        <p class="ingredients__value">kcal</p>
       </li>
       <li class="ingredients__compounds">
-        <p class="ingredients__number">
-          4g<span class="ingredients__value">Prote...</span>
-        </p>
+        <p class="ingredients__number">4g</p>
+        <p class="ingredients__value">Prote...</p>
       </li>
       <li class="ingredients__compounds">
-        <p class="ingredients__number">
-          8,2g<span class="ingredients__value">Fats</span>
-        </p>
+        <p class="ingredients__number">8,2g</p>
+        <p class="ingredients__value">Fats</p>
       </li>
       <li class="ingredients__compounds">
-        <p class="ingredients__number">
-          40,4g<span class="ingredients__value">Carbs</span>
-        </p>
+        <p class="ingredients__number">40,4g</p>
+        <p class="ingredients__value">Carbs</p>
       </li>
     </ul>
 
-    <table>
-      <caption>
+    <table class="ingredients__table">
+      <caption class="ingredients__caption">
         Ingredients
       </caption>
-      <tr>
-        <td>Milk</td>
-        <td>100ml</td>
-      </tr>
-      <tr>
-        <td>Belgian chocolate</td>
-        <td>20g</td>
-      </tr>
-      <tr>
-        <td>Cream</td>
-        <td>150 ml</td>
-      </tr>
-      <tr>
-        <td>Cocoa powder</td>
-        <td>30g</td>
-      </tr>
-      <tr>
-        <td>Sugar</td>
-        <td>40g</td>
-      </tr>
-      <tr>
-        <td>Vanilla sugar</td>
-        <td>10g</td>
-      </tr>
+      <tbody>
+        <tr>
+          <td class="ingredients__ingredient">Milk</td>
+          <td class="ingredients__amount">100ml</td>
+        </tr>
+        <tr>
+          <td class="ingredients__ingredient">Belgian chocolate</td>
+          <td class="ingredients__amount">20g</td>
+        </tr>
+        <tr>
+          <td class="ingredients__ingredient">Cream</td>
+          <td class="ingredients__amount">150 ml</td>
+        </tr>
+        <tr>
+          <td class="ingredients__ingredient">Cocoa powder</td>
+          <td class="ingredients__amount">30g</td>
+        </tr>
+        <tr>
+          <td class="ingredients__ingredient">Sugar</td>
+          <td class="ingredients__amount">40g</td>
+        </tr>
+        <tr>
+          <td
+            class="ingredients__ingredient ingredients__ingredient--no-padding-botoom"
+          >
+            Vanilla sugar
+          </td>
+          <td
+            class="ingredients__amount ingredients__amount--no-padding-botoom"
+          >
+            10g
+          </td>
+        </tr>
+      </tbody>
     </table>
 
     <form class="ingredients__form">
@@ -83,7 +89,7 @@
       />
       <label class="ingredients__label" for="phone"></label>
       <input
-        class="call-back-form__input"
+        class="ingredients__input"
         type="tel"
         name="phone"
         id="phone"
