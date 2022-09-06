@@ -1,6 +1,6 @@
 
 .section-customer {
-  padding-top: 185px;
+  padding-top: 80px;
     padding-bottom: 395px;
   text-align: center;
 
@@ -28,7 +28,7 @@
 
     background-image: url(../images/tablet/ice-cream-background-tablet/ice-cream-background-tablet.jpg);
 
-    padding-top: 220px;
+    padding-top: 60px;
     padding-bottom: 385px;
   }
 
@@ -60,6 +60,12 @@
   border-radius: 10px;
 
   margin-bottom: 30px;
+
+  @media screen and(max-width:767px){
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media screen and(min-width:768px) {
     @include font-style(400, 14px, 26px);
