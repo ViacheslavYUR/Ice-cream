@@ -6,12 +6,16 @@
 .gallery__container {
   display: block;
   position: relative;
-@include centered-flex($type: center);
+  display: flex;
+  justify-content: center;
+  @media screen and(min-width:768px) {
+    @include centered-flex($type: center);
+  }
 }
 
 .gallery__thumb {
-position: absolute;
-transform: translate(0px, -25px);
+  position: absolute;
+  transform: translate(0px, -25px);
   overflow: hidden;
   border-radius: 7px;
 
