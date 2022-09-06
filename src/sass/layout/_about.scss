@@ -20,7 +20,8 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  padding-top: 12px;
+  margin-top: 12px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
     @include font-style(400, 34px, 43px);
@@ -38,7 +39,7 @@
 }
 .about__text {
   @include font-style(400, 12px, 19px);
-  padding-top: 4px;
+  margin-top: 4px;
   font-family: var(--secondary-font);
   letter-spacing: 0.04em;
   color: var(--secondary-text-color);
@@ -52,20 +53,34 @@
 }
 
 @media screen and (max-width: 767px) {
+  .section{
+    padding-bottom: 0;
+  }
   .about-img {
     margin: 0 auto;
     padding-top: 22px;
   }
   .about__img-wrapper {
     display: block;
-    padding-top: 32px;
   }
   .about__list {
-    padding-top: 40px;
+    margin-top: 40px;
   }
   .about__text-position {
-    padding-left: 50px;
-    padding-right: 50px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about__text-ice{
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about__text{
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0;
   }
   .about-bt {
     margin-top: 20px;
