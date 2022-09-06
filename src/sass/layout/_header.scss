@@ -6,7 +6,6 @@
   padding-bottom: 16px;
   width: 100%;
   z-index: 10;
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -52,8 +51,6 @@
   fill: #fff;
 }
 
-
-
 .mobile-menu-close {
   position: absolute;
   top: 16px;
@@ -83,7 +80,7 @@
     justify-content: flex-end;
   }
 
-  .solid-button__buy-now {
+  .solid-button__buy-now--display-none {
     margin-left: 32px;
   }
 
@@ -197,14 +194,14 @@
   pointer-events: none;
   transform: translateX(100%);
   transition: transform 500ms var(--timing-function),
-    opacity 500ms var(--timing-function),
-    visibility 500ms var(--timing-function);
+  opacity 500ms var(--timing-function),
+  visibility 500ms var(--timing-function);
 }
 
 .backdrop-header.is-open {
   position: fixed;
   top: 0;
-  right:0;
+  right: 0;
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
@@ -213,6 +210,7 @@
   width: 100%;
   height: 100vh;
   overflow: scroll;
+  
 }
 
 @media screen and (min-width: 1200px) {
