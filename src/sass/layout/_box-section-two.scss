@@ -1,5 +1,5 @@
 .two-section {
-  background-image: url(../images/mobile/ice-cream-background-mobile/ice-cream-background-mobile.jpg),
+  background-image: url(../images/mobile/ice-cream-background-mobile/ice-cream-bg-customer-mobile.jpg),
     linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 45%,
@@ -18,7 +18,7 @@
         var(--main-bg-color) 45%,
         var(--main-bg-color) 100%
       ),
-      url(../images/mobile/ice-cream-background-mobile/ice-cream-background-mobile@2x.jpg);
+      url(../images/mobile/ice-cream-background-mobile/ice-cream-bg-customer-mobile@2x.jpg);
   }
 
   @media screen and(min-width:768px) {
@@ -31,7 +31,7 @@
           var(--main-bg-color) 68.5%,
           var(--main-bg-color) 100%
         ),
-        url(../images/tablet/ice-cream-background-tablet/ice-cream-background-tablet@2x.jpg);
+        url(../images/tablet/ice-cream-background-tablet/ice-cream-bg-customer-tablet@2x.jpg);
     }
 
     background-image: linear-gradient(
@@ -40,11 +40,11 @@
         var(--main-bg-color) 68.5%,
         var(--main-bg-color) 100%
       ),
-      url(../images/tablet/ice-cream-background-tablet/ice-cream-background-tablet.jpg);
+      url(../images/tablet/ice-cream-background-tablet/ice-cream-bg-customer-tablet.jpg);
   }
 
   @media screen and(min-width:1200px) {
-    background-image: url(../images/desktop/ice-cream-background/ice-cream-background.jpg),
+    background-image: url(../images/desktop/ice-cream-background/ice-cream-bg-customer-desktop.jpg),
       linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 66%,
@@ -61,7 +61,7 @@
           var(--main-bg-color) 63%,
           var(--main-bg-color) 100%
         ),
-        url(../images/desktop/ice-cream-background/ice-cream-background@2x.jpg);
+        url(../images/desktop/ice-cream-background/ice-cream-bg-customer-desktop@2x.jpg);
     }
   }
 }
