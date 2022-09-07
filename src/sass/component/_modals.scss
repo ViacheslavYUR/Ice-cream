@@ -67,9 +67,20 @@
     text-align: center;
     margin-bottom: 20px;
 
+    
+    @media screen and (max-width: 767px) {
+        &--padding-bottom {
+            margin-bottom: 84px;
+        }
+    }
+
     @media screen and (min-width: 768px) {
         @include font-style(400, 20px, 28px);
         margin-bottom: 32px;
+
+        &--padding-bottom {
+            margin-bottom: 103;
+        }
     }
 }
 
@@ -335,4 +346,215 @@
         color: black;
     }
 
+}
+
+.modal-buynow__title {
+    @include font-style(700, 16px, 20px);
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 95px;
+    padding-bottom: 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: var(--main-text-color);
+}
+
+.modal-buynow__item-wrapper {
+    position: relative;
+}
+
+.modal-buynow__title::before {
+    display: block;
+    position: absolute;
+    content: '';
+    background: #d9d9d9;
+    width: 130px;
+    height: 140px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.modal-buynow__item {
+    border: 2px solid #96af8c;
+    border-radius: 15.7808px;
+    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    max-width: 132px;
+
+    &:not(:last-child) {
+        margin-bottom: 83px;
+
+        @media screen and(min-width:768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &:nth-child(1) {
+        border: 2px solid #96af8c;
+    }
+
+    &:nth-child(2) {
+        border: 2px solid #efd478;
+    }
+
+    &:nth-child(3) {
+        border: 2px solid #d6936d;
+    }
+}
+
+.modal-buynow__link:active .modal-buynow__item-wrapper--1 {
+    transition: all 0s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #96af8c;
+}
+
+.modal-buynow__link:active .modal-buynow__item-wrapper--2 {
+    transition: all 0s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #efd478;
+}
+
+.modal-buynow__link:active .modal-buynow__item-wrapper--3 {
+    transition: all 0s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #d6936d;
+}
+
+.modal-buynow__list {
+    margin-bottom: 24px;
+
+    @media screen and(min-width:768px) {
+        display: flex;
+        gap: 32px;
+        flex-basis: calc((100% - 64px) / 2);
+        align-items: center;
+    }
+}
+
+.modal-buynow__image1::before {
+    background-image: url(../images/mobile/product-1-mobile/product-1-mobile.png),
+        linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    background-size: 130px, cover;
+    background-repeat: no-repeat, repeat-y;
+
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        background-image: url(../images/mobile/product-1-mobile/product-1-mobile@2x.png),
+            linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/tablet/product-1-tablet/product-1-tablet.png),
+            linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+        background-image: url(../images/tablet/product-1-tablet/product-1-tablet@2x.png),
+            linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/desktop/product-1/product-1.png),
+            linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        background-image: url(../images/desktop/product-1/product-1@2x.png),
+            linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-size: 130px, cover;
+    }
+}
+
+.modal-buynow__image2::before {
+    background-image: url(../images/mobile/product-2-mobile/product-2-mobile.png),
+        linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    background-size: 130px, cover;
+    background-repeat: no-repeat, repeat-y;
+
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        background-image: url(../images/mobile/product-2-mobile/product-2-mobile@2x.png),
+            linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/tablet/product-2-tablet/product-2-tablet.png),
+            linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+        background-image: url(../images/tablet/product-2-tablet/product-2-tablet@2x.png),
+            linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/desktop/product-2/product-2.png),
+            linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        background-image: url(../images/desktop/product-2/product-2@2x.png),
+            linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-size: 130px, cover;
+    }
+}
+
+.modal-buynow__image3::before {
+    background-image: url(../images/mobile/product-3-mobile/product-3-mobile.png),
+        linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    background-size: 130px, cover;
+    background-repeat: no-repeat, repeat-y;
+
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        background-image: url(../images/mobile/product-3-mobile/product-3-mobile@2x.png),
+            linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/tablet/product-3-tablet/product-3-tablet.png),
+            linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+        background-image: url(../images/tablet/product-3-tablet/product-3-tablet@2x.png),
+            linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/desktop/product-3/product-3.png),
+            linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        background-image: url(../images/desktop/product-3/product-3@2x.png),
+            linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-size: 130px, cover;
+    }
 }
