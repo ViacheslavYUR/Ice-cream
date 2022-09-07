@@ -1,17 +1,13 @@
 <div class="backdrop backdrop--hidden" data-ingredients-modal>
-  <div class="ingredients-modal">
-    <button
-      class="read-modal__close-btn"
-      type="button"
-      data-ingredients-modal-close
-    >
+  <div class="modal modal--long">
+    <button class="modal__close-btn" type="button" data-ingredients-modal-close>
       <svg width="11" height="11">
         <use href="./images/svg/ic-sprite.svg#close"></use>
       </svg>
     </button>
 
-    <h3 class="ingredients-modal__title">Chololate icecream</h3>
-    <picture class="ingredients-modal__image">
+    <h3 class="modal__title">Chololate icecream</h3>
+    <picture class="modal__image">
       <img
         src="./images/desktop/chololate-icecream/chololate-icecream.png"
         alt="Рожек с аппетитным шоколадным мороженным"
@@ -22,85 +18,83 @@
 
     <h4 class="visually-hidden">nutrients</h4>
 
-    <ul class="ingredients__list">
-      <li class="ingredients__compounds">
-        <p class="ingredients__number">320</p>
-        <p class="ingredients__value">kcal</p>
+    <ul class="modal__list">
+      <li class="modal__compounds">
+        <p class="modal__number">320</p>
+        <p class="modal__value">kcal</p>
       </li>
-      <li class="ingredients__compounds">
-        <p class="ingredients__number">4g</p>
-        <p class="ingredients__value">Prote...</p>
+      <li class="modal__compounds">
+        <p class="modal__number">4g</p>
+        <p class="modal__value">Prote...</p>
       </li>
-      <li class="ingredients__compounds">
-        <p class="ingredients__number">8,2g</p>
-        <p class="ingredients__value">Fats</p>
+      <li class="modal__compounds">
+        <p class="modal__number">8,2g</p>
+        <p class="modal__value">Fats</p>
       </li>
-      <li class="ingredients__compounds">
-        <p class="ingredients__number">40,4g</p>
-        <p class="ingredients__value">Carbs</p>
+      <li class="modal__compounds">
+        <p class="modal__number">40,4g</p>
+        <p class="modal__value">Carbs</p>
       </li>
     </ul>
 
-    <table class="ingredients__table">
-      <caption class="ingredients__caption">
+    <table class="modal__table">
+      <caption class="modal__caption">
         Ingredients
       </caption>
       <tbody>
         <tr>
-          <td class="ingredients__ingredient">Milk</td>
-          <td class="ingredients__amount">100ml</td>
+          <td class="modal__ingredient">Milk</td>
+          <td class="modal__amount">100ml</td>
         </tr>
         <tr>
-          <td class="ingredients__ingredient">Belgian chocolate</td>
-          <td class="ingredients__amount">20g</td>
+          <td class="modal__ingredient">Belgian chocolate</td>
+          <td class="modal__amount">20g</td>
         </tr>
         <tr>
-          <td class="ingredients__ingredient">Cream</td>
-          <td class="ingredients__amount">150 ml</td>
+          <td class="modal__ingredient">Cream</td>
+          <td class="modal__amount">150 ml</td>
         </tr>
         <tr>
-          <td class="ingredients__ingredient">Cocoa powder</td>
-          <td class="ingredients__amount">30g</td>
+          <td class="modal__ingredient">Cocoa powder</td>
+          <td class="modal__amount">30g</td>
         </tr>
         <tr>
-          <td class="ingredients__ingredient">Sugar</td>
-          <td class="ingredients__amount">40g</td>
+          <td class="modal__ingredient">Sugar</td>
+          <td class="modal__amount">40g</td>
         </tr>
         <tr>
           <td
-            class="ingredients__ingredient ingredients__ingredient--no-padding-botoom"
+            class="modal__ingredient ingredients__ingredient--no-padding-botoom"
           >
             Vanilla sugar
           </td>
-          <td
-            class="ingredients__amount ingredients__amount--no-padding-botoom"
-          >
+          <td class="modal__amount ingredients__amount--no-padding-botoom">
             10g
           </td>
         </tr>
       </tbody>
     </table>
 
-    <form class="ingredients__form">
-      <label class="ingredients__label" for="name"></label>
+    <form class="modal__form">
+      <label class="modal__label" for="name"></label>
       <input
-        class="ingredients__input"
+        class="modal__input"
         type="text"
         name="name"
         id="name"
         placeholder="Name"
       />
-      <label class="ingredients__label" for="phone"></label>
+      <label class="modal__label" for="phone"></label>
       <input
-        class="ingredients__input"
+        class="modal__input"
         type="tel"
         name="phone"
         id="phone"
         placeholder="Phone"
       />
-      <label class="ingredients__label" for="comment"></label>
+      <label class="modal__label" for="comment"></label>
       <textarea
-        class="ingredients__input ingredients__input--comment"
+        class="modal__input modal__input--comment"
         name="comment"
         id="comment"
         placeholder="Comment"
