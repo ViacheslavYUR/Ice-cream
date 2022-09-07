@@ -88,13 +88,14 @@
   .mobile-menu-open {
     margin-left: auto;
   }
+ }
 
+ @media screen and (max-width:1199px) {
   .backdrop-header.is-open .mobile-menu-open {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-}
+      
+      display: none;
+    }
+ }
 
 @media screen and (min-width: 768px) {
   .menu-container.is-open .solid-button__buy-now {
