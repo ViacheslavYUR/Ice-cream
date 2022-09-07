@@ -88,17 +88,16 @@
   .mobile-menu-open {
     margin-left: auto;
   }
- }
+}
 
- @media screen and (max-width:1199px) {
-  .backdrop-header.is-open .mobile-menu-open {
-      
-      display: none;
-    }
- }
+@media screen and (max-width: 1199px) {
+  .backdrop-header .mobile-menu-open {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 768px) {
-  .menu-container.is-open .solid-button__buy-now {
+  .backdrop-header.is-open .solid-button__buy-now {
     display: none;
   }
 }
@@ -155,7 +154,7 @@
 
 @media screen and (max-width: 767px) {
   .mobile-menu__item {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .mobile-menu__link {
