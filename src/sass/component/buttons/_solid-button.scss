@@ -128,7 +128,7 @@
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
   box-shadow: 1px 49px 41px -25px rgba(0, 0, 0, 0.51);
-  z-index: 99999;
+  z-index: 9;
 
   &:hover, &:focus {
     opacity: 1;
