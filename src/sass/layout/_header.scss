@@ -1,5 +1,7 @@
 .page-header {
   position: absolute;
+  top: 0;
+  left: 0;
   padding-top: 16px;
   padding-bottom: 16px;
   width: 100%;
@@ -49,36 +51,6 @@
   fill: #fff;
 }
 
-.menu-container {
-  position: fixed;
-  transform: translateX(-100%);
-  transition: transform 500ms var(--timing-function),
-    opacity 500ms var(--timing-function),
-    visibility 500ms var(--timing-function);
-  width: 100vw;
-  height: 100vh;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  overflow: scroll;
-  background-color: var(--main-bg-color);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.menu-container.is-open {
-  transform: translateX(0);
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
-}
-
 .mobile-menu-close {
   position: absolute;
   top: 16px;
@@ -108,12 +80,19 @@
     justify-content: flex-end;
   }
 
-  .solid-button__buy-now {
+  .solid-button__buy-now--display-none {
     margin-left: 32px;
+    display: none;
   }
 
   .mobile-menu-open {
     margin-left: auto;
+  }
+
+  .backdrop-header.is-open .mobile-menu-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
 
@@ -121,17 +100,9 @@
   .menu-container.is-open .solid-button__buy-now {
     display: none;
   }
-
-  .header__solid-button {
-    z-index: 100;
-  }
 }
 
 @media screen and (max-width: 767px) {
-  .header__solid-button {
-    display: none;
-  }
-
   .solid-button__buy-now {
     margin-left: auto;
     margin-right: auto;
@@ -219,5 +190,54 @@
   .mobile-menu__link:hover,
   .mobile-menu__link:focus {
     color: var(--main-text-color);
+  }
+}
+
+.backdrop-header {
+  position: fixed;
+  top: 0;
+  left: 100vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  overflow: scroll;
+  background-color: var(--main-bg-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 500ms var(--timing-function),
+    opacity 500ms var(--timing-function),
+    visibility 500ms var(--timing-function);
+}
+
+.backdrop-header.is-open {
+  position: fixed;
+  transform: translateX(-100vw);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop-header {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: relative;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    width: 768px;
   }
 }

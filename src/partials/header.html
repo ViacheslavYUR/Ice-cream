@@ -22,7 +22,29 @@
         </li>
       </ul>
     </nav>
-    <div class="menu-container" data-menu>
+
+    <button
+      type="button"
+      class="mobile-menu-open"
+      aria-label=" switch mobile-menu "
+      data-menu-open
+    >
+      <svg class="mobile-menu-open__icon" width="32" height="32">
+        <use href="./images/svg/ic-sprite.svg#burger"></use>
+      </svg>
+    </button>
+    <button
+      type="button"
+      class="solid-button__buy-now solid-button__buy-now--display-none"
+    >
+      Buy now
+      <svg class="solid-button__icon" width="7" height="10">
+        <use href="./images/svg/ic-sprite.svg#vector"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="backdrop-header" data-menu>
+    <div class="menu-container">
       <a href="#" class="logo menu-container__logo">
         <img class="logo__img" src="./images/png/logo.png" alt="Logotype" />
       </a>
@@ -45,6 +67,7 @@
           </li>
         </ul>
       </nav>
+
       <button
         type="button"
         class="solid-button__buy-now solid-button__buy-now--centered"
@@ -67,6 +90,7 @@
         </svg>
       </button>
     </div>
+    
 
     <button
       type="button"
@@ -88,5 +112,6 @@
         <use href="./images/svg/ic-sprite.svg#vector"></use>
       </svg>
     </button>
+    
   </div>
 </header>
