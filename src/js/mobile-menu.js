@@ -12,6 +12,6 @@
   function toggleModal() {
     document.body.classList.toggle("modal-open");
     refs.menu.classList.toggle('is-open');
-    refs.modal.classList.toggle("backdrop--hidden");
+    // refs.modal.classList.toggle("backdrop--hidden");
   }
 })();
