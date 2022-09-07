@@ -20,7 +20,8 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  padding-top: 12px;
+  margin-top: 12px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
     @include font-style(400, 34px, 43px);
@@ -38,34 +39,48 @@
 }
 .about__text {
   @include font-style(400, 12px, 19px);
-  padding-top: 4px;
+  margin-top: 4px;
   font-family: var(--secondary-font);
   letter-spacing: 0.04em;
   color: var(--secondary-text-color);
 }
 .about__text-mobile {
   @include font-style(400, 12px, 19px);
-  padding-top: 8px;
+  margin-top: 8px;
   font-family: var(--secondary-font);
   letter-spacing: 0.04em;
   color: var(--secondary-text-color);
 }
 
 @media screen and (max-width: 767px) {
+  .section-about{
+    padding-bottom: 0;
+  }
   .about-img {
     margin: 0 auto;
     padding-top: 22px;
   }
   .about__img-wrapper {
     display: block;
-    padding-top: 32px;
   }
   .about__list {
-    padding-top: 40px;
+    margin-top: 40px;
   }
   .about__text-position {
-    padding-left: 50px;
-    padding-right: 50px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .about__text-ice{
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about__text{
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0;
   }
   .about-bt {
     margin-top: 20px;
@@ -79,56 +94,63 @@
 }
 
 @media screen and (min-width: 768px) {
+  .section-about {
+    padding-bottom: 0;
+  }
+  .about__title {
+    margin-bottom: 72px;
+  }
   .about-img {
     max-width: none;
     padding-top: 26px;
-  }
-  .about__img-wrapper {
-    padding-top: 40px;
-  }
-  .about__list {
-    padding-top: 79px;
   }
   .about__position {
     display: flex;
   }
   .about__text-position {
-    padding-left: 32px;
-    padding-right: 34px;
+    margin-top: 7px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .about__text-ice{
+    width: 334px;
   }
   .about__text {
-    padding-top: 8px;
+    line-height: 1.75;
+    width: 334px;
+    margin-top: 8px;
   }
   .about-bt {
     margin-top: 48px;
   }
   .about__text-mobile {
+    width: 334px;
     @include font-style(400, 12px, 23px);
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .about__title {
+    margin-bottom: 82px;
+  }
   .about-img {
     padding-top: 39px;
   }
-  .about__img-wrapper {
-    padding-top: 82px;
-  }
-  .about__list {
-    padding-top: 172px;
-  }
   .about__text-position {
-    padding-left: 100px;
-    padding-right: 121px;
+    margin-top: 90px;
+    margin-left: 100px;
+    margin-right: 121px;
   }
   .about__text-ice {
+    width: 463px;
     @include font-style(400, 16px, 28px);
   }
   .about__text {
-    padding-top: 8px;
+    width: 463px;
     @include font-style(400, 14px, 28px);
   }
   .about__text-mobile {
+    width: 463px;
     @include font-style(400, 14px, 28px);
   }
 }

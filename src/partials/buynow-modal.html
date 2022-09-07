@@ -1,0 +1,60 @@
+<div class="backdrop backdrop--hidden" data-buynow-modal>
+  <div class="modal-buynow">
+    <button class="read-modal__close-btn" type="button" data-buynow-modal-close>
+      <svg width="11" height="11">
+        <use href="./images/svg/ic-sprite.svg#close"></use>
+      </svg>
+    </button>
+    <h3 class="modal-buynow__main-title">Buy now</h3>
+    <ul class="modal-buynow__list">
+      <li class="modal-buynow__item">
+        <a class="modal-buynow__link" href="#">
+          <div class="modal-buynow__item-wrapper">
+            <h3 class="modal-buynow__title modal-buynow__image1">ice cream</h3>
+          </div>
+        </a>
+      </li>
+      <li class="modal-buynow__item">
+        <a class="modal-buynow__link" href="#">
+          <div class="modal-buynow__item-wrapper">
+            <h3 class="modal-buynow__title modal-buynow__image2">ice coffee</h3>
+          </div>
+        </a>
+      </li>
+      <li class="modal-buynow__item">
+        <a class="modal-buynow__link" href="#">
+          <div class="modal-buynow__item-wrapper">
+            <h3 class="modal-buynow__title modal-buynow__image3">milkshakes</h3>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <form class="ingredients__form">
+      <label class="ingredients__label" for="name1"></label>
+      <input
+        class="ingredients__input"
+        type="text"
+        name="name1"
+        id="name1"
+        placeholder="Name"
+        autofocus
+      />
+      <label class="ingredients__label" for="phone1"></label>
+      <input
+        class="ingredients__input"
+        type="tel"
+        name="phone1"
+        id="phone1"
+        placeholder="Phone"
+      />
+      <label class="ingredients__label" for="comment1"></label>
+      <textarea
+        class="ingredients__input ingredients__input--comment"
+        name="comment1"
+        id="comment1"
+        placeholder="Comment"
+      ></textarea>
+      <button class="solid-button__modal" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

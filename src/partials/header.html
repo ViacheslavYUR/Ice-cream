@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="page-header" id="header">
   <div class="container page-header__container">
     <a href="./index.html" class="logo">
       <img class="logo__img" src="./images/png/logo.png" alt="Logotype" />
@@ -22,7 +22,6 @@
         </li>
       </ul>
     </nav>
-    
 
     <button
       type="button"
@@ -68,18 +67,51 @@
           </li>
         </ul>
       </nav>
-      <button type="button" class="solid-button__buy-now solid-button__buy-now--centered">
+
+      <button
+        type="button"
+        class="solid-button__buy-now solid-button__buy-now--centered"
+        data-buynow-modal-open
+      >
         Buy now
         <svg class="solid-button__icon" width="7" height="10">
           <use href="./images/svg/ic-sprite.svg#vector"></use>
         </svg>
       </button>
-  
-      <button type="button" class="mobile-menu-close" aria-label=" switch mobile-menu " data-menu-close>
+
+      <button
+        type="button"
+        class="mobile-menu-close"
+        aria-label=" switch mobile-menu "
+        data-menu-close
+      >
         <svg class="mobile-menu-close__icon" width="32" height="32">
           <use href="./images/svg/ic-sprite.svg#close"></use>
         </svg>
       </button>
     </div>
+    
+
+    <button
+      type="button"
+      class="mobile-menu-open"
+      aria-label=" switch mobile-menu "
+      data-menu-open
+    >
+      <svg class="mobile-menu-open__icon" width="32" height="32">
+        <use href="./images/svg/ic-sprite.svg#burger"></use>
+      </svg>
+    </button>
+    <button
+      type="button"
+      class="solid-button__buy-now solid-button__buy-now--display-none"
+      data-buynow-modal-open
+    >
+      Buy now
+      <svg class="solid-button__icon" width="7" height="10">
+        <use href="./images/svg/ic-sprite.svg#vector"></use>
+      </svg>
+    </button>
+    
   </div>
 </header>

@@ -82,10 +82,17 @@
 
   .solid-button__buy-now--display-none {
     margin-left: 32px;
+    display: none;
   }
 
   .mobile-menu-open {
     margin-left: auto;
+  }
+
+  .backdrop-header.is-open .mobile-menu-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
 
@@ -198,7 +205,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-    transition: transform 500ms var(--timing-function),
+  transition: transform 500ms var(--timing-function),
     opacity 500ms var(--timing-function),
     visibility 500ms var(--timing-function);
 }
@@ -209,7 +216,6 @@
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  
 }
 
 @media screen and (min-width: 1200px) {
