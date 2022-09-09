@@ -4,7 +4,8 @@ for (let smoothLink of smoothLinks) {
         e.preventDefault();
         const id = smoothLink.getAttribute('href');
 
-        document.querySelector(id).scrollIntoView({
+        document.querySelector(id).scrollIntoView
+            ({
             behavior: 'smooth',
             block: 'start'
         });
