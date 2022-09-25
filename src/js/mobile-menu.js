@@ -10,16 +10,17 @@
   refs.closeMenuBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    document.body.classList.toggle("modal-open");
+    document.body.classList.toggle('modal-open');
     refs.menu.classList.toggle('is-open');
     // refs.modal.classList.toggle("backdrop--hidden");
   }
 
   function closeMenu() {
     const mobileLinks = Document.getElementsByClassName('js-mobile-menu__link');
-    mobileLinks.addEventListener('click', function () {
-      refs.menu.classList.remove('is-open');
-    })
-    console.log(mobileLinks);
+    for (const mobileLink of mobileLinks) {
+      mobileLink.addEventListener('click', function () {
+        refs.menu.classList.remove('is-open');
+      });
+    }
   }
 })();
